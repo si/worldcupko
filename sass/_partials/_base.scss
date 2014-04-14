@@ -1,0 +1,16 @@
+/* Base */
+$page-background: #393;
+$page-background-url: "/images/brazilian-team-celebrating.jpg";
+$page-background-url: "/images/rio.jpg";
+$page-background-url: "/images/street-soccer-by-driftermanifesto.jpg";
+$container-width: 960px;
+
+$brazil-red: rgba(211, 84, 0,1.0);
+$brazil-blue: rgba(41, 128, 185,1.0);
+$brazil-yellow: rgba(241, 196, 15,1.0);
+$brazil-green: rgba(46, 204, 113,1.0);
+
+body {
+	background: fixed #333 url($page-background-url) no-repeat 50% 50%;
+	background-size: cover;
+}

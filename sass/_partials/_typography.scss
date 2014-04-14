@@ -1,0 +1,75 @@
+/* Typography */
+
+body {
+	color: rgba(255,255,255,0.9);
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #FFF;
+}
+
+header {
+
+	color: #FFF;
+	 
+	h1 {
+		text-transform: uppercase;
+		font-family: 'Monoton', Arial, sans-serif;
+    font-family: amatic-sc, sans-serif;
+		font-size: 2.8em;
+    overflow: hidden;
+		
+		span {
+		  display: inline-block;
+  		background: $brazil-blue;
+  		margin: 0 0.05em;
+  		padding: 0.1em 0.25em;
+		}
+		span:nth-child(3n+2) {
+  		-moz-transform: rotate(-5deg);
+  		-webkit-transform: rotate(-5deg);
+		}
+		span:nth-child(3n+3) {
+  		-moz-transform: rotate(5deg);
+  		-webkit-transform: rotate(5deg);
+		}
+
+		span:nth-child(4n+2) {
+  		background: $brazil-yellow;
+		}
+		span:nth-child(4n+3) {
+  		background: $brazil-red;
+		}
+		
+		span:nth-child(4n+4) {
+  		background: $brazil-green;
+		}
+		
+		span.char6, span.char10, span.char15 {
+  		background: transparent;
+		}
+	}
+
+	p {
+		font-family: 'Henny Penny', Georgia, serif;
+		font-style: italic;
+		// text-shadow: rgba(0,0,0,0.8) 0 1px 0;
+	}
+
+}
+
+article {
+
+	h2 {
+    font-family: amatic-sc, sans-serif;
+		font-size: 2em;
+		text-transform: uppercase;
+	}
+
+}
+
+footer {
+	font-size: 0.8em;
+	color: rgba(255,255,255,0.5);
+}
