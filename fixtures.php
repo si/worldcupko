@@ -28,19 +28,37 @@ curl_close($ch);
 </head>
 <body>
 
-  <h1>World Cup 2014 Kick Off</h1>
-  <h2>Don't miss a single World Cup kick-off from Brazil</h2>
-
-  <?php if(count($json->events)>0) : ?>
-
-  <h2>Next kick-off in <?php echo $json->events[0]->start; ?></h2>
-
+  <section id="intro">
+    <header>
+      <h1>World Cup 2014 Kick Off</h1>
+      <h2>Don't miss a single World Cup kick off from Brazil</h2>
+    </header>
+    
+    <div>
+      <a href="#">Download the times to your calendar</a>
+    </div>
+    
+    <?php if(count($json->events)>0) : ?>
+  
+    <div>
+      <p>Next kick off in <strong title="<?php echo ($json->events[0]->start); ?>"><?php echo (strtotime($json->events[0]->start) - strtotime('now'))/60/60/24  . ' days'; ?></strong></p>
+    </div>
+  
+  </section>
+  
   <ol class="timeline">
     <?php foreach($json->events as $event) : ?>
     <li>
-      <span class="time" data-timestamp="<?php echo $event->start; ?>"><?php echo date('ha', strtotime($event->start)); ?></span>
-      <h2><span class="team"><?php echo $event->home_team->name; ?></span> v <span class="team"><?php echo $event->away_team->name; ?></span></h2>
+      <span class="time" data-timestamp="<?php echo $event->start; ?>"><?php echo date('ga', strtotime($event->start)); ?></span>
+      <h2>
+        <?php if($event->home_team->name!='') : ?>
+          <span class="team"><?php echo $event->home_team->name; ?></span> v <span class="team"><?php echo $event->away_team->name; ?></span>
+        <?php else: ?>
+          <?php echo $event->summary; ?>
+        <?php endif; ?>
+      </h2>
       <p><?php echo $event->location; ?></p>
+      <a href="#">Remind me</a>
     </li>
     <?php endforeach; ?>
   </ol>
