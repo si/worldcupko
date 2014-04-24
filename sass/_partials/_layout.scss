@@ -118,7 +118,33 @@ article {
     	}
   	}
 	}
+
+	#social {
+	  background: none;
+	  margin: 0;
+	  padding: 0;
+	  
+	  > div {
+	    display: inline-block;
+	    margin: 0;
+	    padding: 3rem 0;
+	    text-align: center;
+  	  width: 33%;
+	  }
+	  
+	  .facebook {
+  	  background: #0073f4;
+	  }
+
+	  .twitter {
+  	  background: #00cffd;
+	  }
+	  
+	  .google {
+  	  background: #eb2800;
+    }
 	
+	}
 
 }
 

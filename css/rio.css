@@ -199,8 +199,34 @@ article #newsletter button {
 article #newsletter button:hover {
   background: black;
 }
+/* line 122, ../sass/_partials/_layout.scss */
+article #social {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 127, ../sass/_partials/_layout.scss */
+article #social > div {
+  display: inline-block;
+  margin: 0;
+  padding: 3rem 0;
+  text-align: center;
+  width: 33%;
+}
+/* line 135, ../sass/_partials/_layout.scss */
+article #social .facebook {
+  background: #0073f4;
+}
+/* line 139, ../sass/_partials/_layout.scss */
+article #social .twitter {
+  background: #00cffd;
+}
+/* line 143, ../sass/_partials/_layout.scss */
+article #social .google {
+  background: #eb2800;
+}
 
-/* line 125, ../sass/_partials/_layout.scss */
+/* line 151, ../sass/_partials/_layout.scss */
 footer {
   margin: 100px auto;
   text-align: center;
@@ -209,7 +235,7 @@ footer {
 
 @media (width: 748px) {
   /* WTF!?  */
-  /* line 134, ../sass/_partials/_layout.scss */
+  /* line 160, ../sass/_partials/_layout.scss */
   #download {
     background-position: 50% 0;
     padding: 50% 0 0;
