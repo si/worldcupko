@@ -46,22 +46,35 @@ curl_close($ch);
   
   </section>
   
-  <ol class="timeline">
-    <?php foreach($json->events as $event) : ?>
-    <li>
-      <span class="time" data-timestamp="<?php echo $event->start; ?>"><?php echo date('ga', strtotime($event->start)); ?></span>
-      <h2>
-        <?php if($event->home_team->name!='') : ?>
-          <span class="team"><?php echo $event->home_team->name; ?></span> v <span class="team"><?php echo $event->away_team->name; ?></span>
-        <?php else: ?>
-          <?php echo $event->summary; ?>
-        <?php endif; ?>
-      </h2>
-      <p><?php echo $event->location; ?></p>
-      <a href="#">Remind me</a>
-    </li>
-    <?php endforeach; ?>
-  </ol>
+  <section class="timeline">
+  
+    <ol class="posts">
+      <?php 
+        foreach($json->events as $event) : 
+        
+          if( $date != date('D j M', strtotime($event->start)) ) :
+            $date = date('D j M', strtotime($event->start));
+          ?>
+            <li class="year"><?php echo $date; ?></li>
+        <?php
+          endif;
+        ?>
+      <li class="event">
+        <span class="time" data-timestamp="<?php echo $event->start; ?>"><?php echo date('ga', strtotime($event->start)); ?></span>
+        <h2>
+          <?php if($event->home_team->name!='') : ?>
+            <span class="team"><?php echo $event->home_team->name; ?></span> v <span class="team"><?php echo $event->away_team->name; ?></span>
+          <?php else: ?>
+            <?php echo $event->summary; ?>
+          <?php endif; ?>
+        </h2>
+        <p><?php echo $event->location; ?></p>
+        <a href="#">Remind me</a>
+      </li>
+      <?php endforeach; ?>
+    </ol>
+  
+  </section>
   
   <?php endif; ?>
   
