@@ -38,10 +38,13 @@ curl_close($ch);
       <a href="#">Download the times to your calendar</a>
     </div>
     
-    <?php if(count($json->events)>0) : ?>
+    <?php if(count($json->events)>0) : 
+      $next = $json->events[0];
+    ?>
   
     <div>
-      <p>Next kick off in <strong title="<?php echo ($json->events[0]->start); ?>"><?php echo (strtotime($json->events[0]->start) - strtotime('now'))/60/60/24  . ' days'; ?></strong></p>
+      <p>Next kick off in <strong title="<?php echo ($next->start); ?>"><?php echo (strtotime($next->start) - strtotime('now'))/60/60/24  . ' days'; ?></strong></p>
+      <p><?php echo $next->summary . ', Group ' . $next->group . ', ' . $next->location; ?></p>
     </div>
   
   </section>
