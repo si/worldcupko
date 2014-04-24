@@ -89,6 +89,7 @@ curl_close($ch);
   </footer>
   
   <script src="/js/libs/jquery-2.0.3.min.js"></script>
-
+  <script src="/js/libs/moment.min.js"></script>
+  
 </body>
 </html>
