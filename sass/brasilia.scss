@@ -1,0 +1,17 @@
+@import "_partials/timeline";
+
+$color-background: #98c83d;
+$color-font: #FFF;
+
+
+body {
+  background: $color-background;
+  color: $color-font;
+  font-family: sans-serif;
+}
+
+
+#intro {
+  margin: 15rem 0;
+  text-align: center;
+}
