@@ -1,0 +1,28 @@
+/* line 1, ../sass/_partials/_timeline.scss */
+.timeline {
+  border-left: 1px solid #FFF;
+  list-style: disc;
+  margin: 0 0 0 5rem;
+  padding-left: 0.8rem;
+}
+/* line 7, ../sass/_partials/_timeline.scss */
+.timeline li {
+  margin: 20rem 0;
+}
+/* line 10, ../sass/_partials/_timeline.scss */
+.timeline li:first-child {
+  margin-top: 0;
+}
+
+/* line 7, ../sass/brasilia.scss */
+body {
+  background: #98c83d;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* line 14, ../sass/brasilia.scss */
+#intro {
+  margin: 15rem 0;
+  text-align: center;
+}
