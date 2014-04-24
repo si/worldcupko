@@ -1,4 +1,5 @@
 <?php
+
 $endpoint = 'http://local.kickoffcalendars.com/calendars/view/5.json';
 
 // create a new cURL resource
@@ -71,7 +72,10 @@ curl_close($ch);
             <?php echo $event->summary; ?>
           <?php endif; ?>
         </h2>
-        <p><?php echo $event->location; ?></p>
+        <p class="detail">
+          <span class="location"><?php echo $event->location; ?></span>,
+          <span class="group"><?php echo ((strlen($event->group)==1) ? 'Group ' : '') . $event->group; ?></span>
+        </p>
         <a href="#">Remind me</a>
       </li>
       <?php endforeach; ?>
