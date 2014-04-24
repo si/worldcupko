@@ -81,6 +81,13 @@ curl_close($ch);
   
   <?php endif; ?>
   
+  <footer>
+    
+    <p>Another <a href="http://kickoffcalendars.com/">KickOff Calendar</a> by <a href="http://twitter.com/Si">Si</a></p>
+    <p>World Cup 2014 is managed by FIFA. All data is republished in openly available data formats. Source control by Github</p>
+  
+  </footer>
+  
   <script src="/js/libs/jquery-2.0.3.min.js"></script>
 
 </body>

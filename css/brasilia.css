@@ -148,14 +148,27 @@
   border-bottom: 1px solid #cac4c4;
 }
 
-/* line 7, ../sass/brasilia.scss */
+/* line 6, ../sass/_partials/_footer.scss */
+footer {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.8em;
+  padding: 5rem;
+  text-align: center;
+}
+/* line 13, ../sass/_partials/_footer.scss */
+footer a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 8, ../sass/brasilia.scss */
 body {
   background: #98c83d;
   color: white;
   font-family: sans-serif;
 }
 
-/* line 14, ../sass/brasilia.scss */
+/* line 15, ../sass/brasilia.scss */
 #intro {
   margin: 15rem 0;
   text-align: center;
