@@ -36,7 +36,15 @@ curl_close($ch);
     </header>
     
     <div>
+
       <a href="#">Download the times to your calendar</a>
+
+  		<form id="newsletter">
+  			<label for="email">Get the fixtures by email</label>
+  			<input type="email" name="email-address" id="email" placeholder="Your email address" />
+  			<button>Subscribe</button>
+  		</form>
+
     </div>
     
     <?php if(count($json->events)>0) : 
