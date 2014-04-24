@@ -4,12 +4,12 @@ $bg-entry: rgb(0,0,0);
 
 //v1
 .timeline {
-  margin: 0px auto;
+  margin: 0 auto;
   max-width: 700px;
   overflow:hidden;
   height: auto;
   position: relative;
-  padding:0px;
+  padding: 0;
   list-style-type:none;
   
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEElEQVQIW2NMTEz8z8gABAAPKwIlXWq1kgAAAABJRU5ErkJggg==);
@@ -18,6 +18,8 @@ $bg-entry: rgb(0,0,0);
   
   ul, ol {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
   *,*:after,&:after,*:before,&:before{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}

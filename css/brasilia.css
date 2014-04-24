@@ -1,11 +1,11 @@
 /* line 6, ../sass/_partials/_timeline.scss */
 .timeline {
-  margin: 0px auto;
+  margin: 0 auto;
   max-width: 700px;
   overflow: hidden;
   height: auto;
   position: relative;
-  padding: 0px;
+  padding: 0;
   list-style-type: none;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEElEQVQIW2NMTEz8z8gABAAPKwIlXWq1kgAAAABJRU5ErkJggg==);
   background-repeat: repeat-y;
@@ -20,14 +20,16 @@
 /* line 19, ../sass/_partials/_timeline.scss */
 .timeline ul, .timeline ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-/* line 23, ../sass/_partials/_timeline.scss */
+/* line 25, ../sass/_partials/_timeline.scss */
 .timeline *, .timeline *:after, .timeline:after, .timeline *:before, .timeline:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 25, ../sass/_partials/_timeline.scss */
+/* line 27, ../sass/_partials/_timeline.scss */
 .timeline .year {
   background: rgba(0, 0, 0, 0.2);
   font-size: 2em;
@@ -42,15 +44,15 @@
     thanks to Lukas Knuth ( https://github.com/christian-fei/Timeline.css/issues/1 )
   */
 }
-/* line 36, ../sass/_partials/_timeline.scss */
+/* line 38, ../sass/_partials/_timeline.scss */
 .timeline .year:first-of-type {
   margin-top: 0 !important;
 }
-/* line 43, ../sass/_partials/_timeline.scss */
+/* line 45, ../sass/_partials/_timeline.scss */
 .timeline .year + .event {
   margin-top: -1.5em;
 }
-/* line 53, ../sass/_partials/_timeline.scss */
+/* line 55, ../sass/_partials/_timeline.scss */
 .timeline .event {
   position: relative;
   text-align: center;
@@ -71,50 +73,50 @@
   -o-transition: background .15s linear;
   transition: background .15s linear;
 }
-/* line 77, ../sass/_partials/_timeline.scss */
+/* line 79, ../sass/_partials/_timeline.scss */
 .timeline .event.featured {
   width: 95% !important;
 }
-/* line 79, ../sass/_partials/_timeline.scss */
+/* line 81, ../sass/_partials/_timeline.scss */
 .timeline .event.featured:after, .timeline .event.featured:before {
   display: none;
 }
 @media all and (max-width: 600px) {
-  /* line 53, ../sass/_partials/_timeline.scss */
+  /* line 55, ../sass/_partials/_timeline.scss */
   .timeline .event {
     width: 85%;
   }
 }
-/* line 88, ../sass/_partials/_timeline.scss */
+/* line 90, ../sass/_partials/_timeline.scss */
 .timeline .event.offset-first {
   margin-top: -1.5em;
 }
-/* line 92, ../sass/_partials/_timeline.scss */
+/* line 94, ../sass/_partials/_timeline.scss */
 .timeline .event img {
   margin-top: 10px;
   max-width: 100%;
 }
-/* line 97, ../sass/_partials/_timeline.scss */
+/* line 99, ../sass/_partials/_timeline.scss */
 .timeline .event:hover {
   background: #a6a6a6;
 }
-/* line 100, ../sass/_partials/_timeline.scss */
+/* line 102, ../sass/_partials/_timeline.scss */
 .timeline .event:hover:after {
   background: black;
 }
-/* line 105, ../sass/_partials/_timeline.scss */
+/* line 107, ../sass/_partials/_timeline.scss */
 .timeline .event:nth-of-type(2n) {
   float: left;
   clear: left;
 }
-/* line 108, ../sass/_partials/_timeline.scss */
+/* line 110, ../sass/_partials/_timeline.scss */
 .timeline .event:nth-of-type(2n):after {
   right: -5%;
   /* reset the standard declaration I defined before*/
   left: auto;
 }
 @media all and (min-width: 650px) {
-  /* line 115, ../sass/_partials/_timeline.scss */
+  /* line 117, ../sass/_partials/_timeline.scss */
   .timeline .event:after {
     display: block;
     content: ' ';
@@ -128,18 +130,18 @@
     border: 2px solid white;
   }
 }
-/* line 130, ../sass/_partials/_timeline.scss */
+/* line 132, ../sass/_partials/_timeline.scss */
 .timeline time {
   display: block;
   font-weight: bold;
 }
-/* line 139, ../sass/_partials/_timeline.scss */
+/* line 141, ../sass/_partials/_timeline.scss */
 .timeline.v2 .year {
   background: white;
   color: black;
   border: 2px solid black;
 }
-/* line 145, ../sass/_partials/_timeline.scss */
+/* line 147, ../sass/_partials/_timeline.scss */
 .timeline.v2 .event {
   border: none;
   background: #FAFAFA;
