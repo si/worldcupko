@@ -31,18 +31,6 @@
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </div>
         
-        <div class="facebook">
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=252313181472957";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
-          <a href="http://www.facebook.com/worldcupkickoff" class="fb-like-box" data-href="http://www.facebook.com/worldcupkickoff" data-width="250" data-height="100" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false">Like on Facebook</a>
-        </div>
-  			
         <div class="google">      
   
           <a href="//plus.google.com/115685022501320155518" class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/115685022501320155518" data-rel="author">+1 on Google</a>
@@ -57,6 +45,18 @@
           
         </div>			
   			
+        <div class="facebook">
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=252313181472957";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+          <a href="http://www.facebook.com/worldcupkickoff" class="fb-like" data-href="https://www.facebook.com/worldcupkickoff" data-layout="standard" data-colorscheme="dark" data-action="recommend" data-show-faces="true" data-share="false">Like us on Facebook</a>
+        </div>
+  			
   		</section>
     		
     </div>
@@ -66,6 +66,7 @@
     ?>
   
     <div id="next">
+      <i class="icon" data-icon="&#xe083"></i>
       <p>
         Next kick off in 
         <strong title="<?php echo ($next->start); ?>"><?php echo (strtotime($next->start) - strtotime('now'))/60/60/24  . ' days'; ?></strong>
