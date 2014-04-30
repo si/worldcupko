@@ -1,6 +1,6 @@
 <?php
 
-$endpoint = 'http://local.kickoffcalendars.com/calendars/view/5.json';
+$endpoint = ($_SERVER['SERVER_ADDR']=='127.0.0.1') ? 'http://local.kickoffcalendars.com/calendars/view/5.json' : 'http://build.kickoffcalendars.com/calendars/export/5.json';
 
 // create a new cURL resource
 $ch = curl_init();
