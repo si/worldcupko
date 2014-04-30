@@ -1,3 +1,4 @@
+@import "_partials/intro";
 @import "_partials/timeline";
 @import "_partials/footer";
 
@@ -8,11 +9,8 @@ $color-font: #FFF;
 body {
   background: $color-background;
   color: $color-font;
-  font-family: sans-serif;
+  font-family: Avenir, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
-#intro {
-  margin: 15rem 0;
-  text-align: center;
-}

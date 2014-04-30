@@ -1,0 +1,75 @@
+#intro {
+  background: linear-gradient(
+      rgba(0,0,0,0.4), 
+      rgba(0,0,0,0.3)
+    ), url(/img/street-soccer-by-driftermanifesto.jpg) no-repeat scroll 0 0 / 100% content-box content-box;
+  color: #FFF;
+  padding: 10rem 0;
+  text-align: center;
+
+  h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 0;
+  }
+
+  #download, 
+  #newsletter, 
+  #social {
+    display: inline-block;
+    margin: 0 0 3rem;
+    padding: 0;
+    width: 30%;
+    
+    i {
+      display: block;
+      font-size: 3rem;
+    }
+    a {
+      color: #FFF;
+    }
+    
+  }
+  
+  #download {
+    
+    small {
+      display: block;
+    }
+  }
+  
+  #newsletter {
+    
+    label {
+      display: block;
+    }
+    
+    input, button {
+      border: none;
+      display: inline-block;
+      font-family: Avenir, Helvetica, sans-serif;
+      padding: 0.75em;
+    }
+    
+    input {
+      background: rgba(#FFF,0.8);
+      color: rgba(#000,0.8);
+    }
+    button {
+      background: rgba(#000,0.8);
+      color: rgba(#FFF,0.8);
+    }
+    
+  }
+  
+  #next {
+    clear: left;
+    display: block;
+  }
+
+}
