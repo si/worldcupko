@@ -8,22 +8,24 @@
     <div class="actions">
     
       <div id="download">
-        <i class="icon" data-icon="&#xe082;"></i>
         <a href="#">
-          Download the kick off times to your calendar
+          <i class="icon" data-icon="&#xe082;"></i>
+          Download kick off times to your calendar
           <small>for Windows, Mac or mobile</small>
         </a>
       </div>
 
   		<form id="newsletter">
-  		  <i class="icon" data-icon="&#xe038;"></i>
-  			<label for="email">Get the fixtures by email</label>
+  			<label for="email">
+    			<i class="icon" data-icon="&#xe038;"></i>
+    			Get fixtures by email daily
+  			</label>
   			<input type="email" name="email-address" id="email" placeholder="Your email address" />
   			<button type="submit">Subscribe</button>
   		</form>
   		
   		<section id="social">
-        <i class="icon" data-icon="&#xe05e;"></i>
+        <i class="icon" data-icon="&#xe02a;"></i>
         <div class="twitter">
           <a href="https://twitter.com/worldcupko" class="twitter-follow-button" data-show-count="true" data-show-screen-name="true">Follow @worldcupko</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
