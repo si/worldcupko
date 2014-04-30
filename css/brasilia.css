@@ -32,39 +32,54 @@
 #intro #social i {
   display: block;
   font-size: 3rem;
+  transition: all 0.5s ease;
 }
-/* line 33, ../sass/_partials/_intro.scss */
+/* line 34, ../sass/_partials/_intro.scss */
+#intro #download i:hover,
+#intro #newsletter i:hover,
+#intro #social i:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+/* line 40, ../sass/_partials/_intro.scss */
 #intro #download a,
 #intro #newsletter a,
 #intro #social a {
   color: #FFF;
 }
-/* line 41, ../sass/_partials/_intro.scss */
-#intro #download small {
-  display: block;
-}
 /* line 48, ../sass/_partials/_intro.scss */
+#intro #download a {
+  display: inline-block;
+  max-width: 11em;
+  text-decoration: none;
+}
+/* line 53, ../sass/_partials/_intro.scss */
+#intro #download a small {
+  display: block;
+  font-size: 0.7em;
+}
+/* line 62, ../sass/_partials/_intro.scss */
 #intro #newsletter label {
   display: block;
 }
-/* line 52, ../sass/_partials/_intro.scss */
+/* line 66, ../sass/_partials/_intro.scss */
 #intro #newsletter input, #intro #newsletter button {
   border: none;
   display: inline-block;
   font-family: Avenir, Helvetica, sans-serif;
   padding: 0.75em;
 }
-/* line 59, ../sass/_partials/_intro.scss */
+/* line 73, ../sass/_partials/_intro.scss */
 #intro #newsletter input {
   background: rgba(255, 255, 255, 0.8);
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 63, ../sass/_partials/_intro.scss */
+/* line 77, ../sass/_partials/_intro.scss */
 #intro #newsletter button {
   background: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 0.8);
 }
-/* line 70, ../sass/_partials/_intro.scss */
+/* line 84, ../sass/_partials/_intro.scss */
 #intro #next {
   clear: left;
   display: block;
