@@ -1,5 +1,5 @@
 $text-color: rgb(77, 77, 77);
-$bg-entry: rgb(0,0,0);
+$bg-entry: rgb(255,255,255);
 
 
 //v1
@@ -25,15 +25,17 @@ $bg-entry: rgb(0,0,0);
   *,*:after,&:after,*:before,&:before{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 
   .year {
-    background: rgba($bg-entry,0.2);
-    font-size: 2em;
-    max-width: 6em; 
+    background: rgba($text-color,0.9);
+    border-radius: 50%;
     clear: both; 
-    margin: 1em auto;
-    color: white;
-    border-radius: 100% / 100%;
+    color: $bg-entry;
+    font-size: 1.3em;
+    height: 4.5em;
+    line-height: 0.9;
+    margin: 50px auto 1em;
+    width: 4.5em;
+    padding: 1em; 
     text-align: center;
-    margin-top: 50px;
     
     &:first-of-type {
       margin-top: 0 !important;
@@ -63,8 +65,8 @@ $bg-entry: rgb(0,0,0);
     
     list-style-type: none;
     display: block;
-    padding: .4em;
-    background: white;
+    padding: 2rem;
+    background: rgba($bg-entry,0.8);
     z-index: 15;
     
     color: $text-color;
@@ -97,7 +99,7 @@ $bg-entry: rgb(0,0,0);
     }
 
     &:hover {
-      background: lighten($bg-entry,65%);
+      background: rgba($bg-entry,1);
 
       &:after {
         background: $bg-entry;

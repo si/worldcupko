@@ -128,28 +128,30 @@
 }
 /* line 27, ../sass/_partials/_timeline.scss */
 .timeline .year {
-  background: rgba(255, 255, 255, 0.2);
-  font-size: 2em;
-  max-width: 6em;
-  clear: both;
-  margin: 1em auto;
-  color: white;
+  background: rgba(77, 77, 77, 0.9);
   border-radius: 50%;
+  clear: both;
+  color: white;
+  font-size: 1.3em;
+  height: 4.5em;
+  line-height: 0.9;
+  margin: 50px auto 1em;
+  width: 4.5em;
+  padding: 1em;
   text-align: center;
-  margin-top: 50px;
   /*
     thanks to Lukas Knuth ( https://github.com/christian-fei/Timeline.css/issues/1 )
   */
 }
-/* line 38, ../sass/_partials/_timeline.scss */
+/* line 40, ../sass/_partials/_timeline.scss */
 .timeline .year:first-of-type {
   margin-top: 0 !important;
 }
-/* line 45, ../sass/_partials/_timeline.scss */
+/* line 47, ../sass/_partials/_timeline.scss */
 .timeline .year + .event {
   margin-top: -1.5em;
 }
-/* line 55, ../sass/_partials/_timeline.scss */
+/* line 57, ../sass/_partials/_timeline.scss */
 .timeline .event {
   position: relative;
   text-align: center;
@@ -170,50 +172,50 @@
   -o-transition: background .15s linear;
   transition: background .15s linear;
 }
-/* line 79, ../sass/_partials/_timeline.scss */
+/* line 81, ../sass/_partials/_timeline.scss */
 .timeline .event.featured {
   width: 95% !important;
 }
-/* line 81, ../sass/_partials/_timeline.scss */
+/* line 83, ../sass/_partials/_timeline.scss */
 .timeline .event.featured:after, .timeline .event.featured:before {
   display: none;
 }
 @media all and (max-width: 600px) {
-  /* line 55, ../sass/_partials/_timeline.scss */
+  /* line 57, ../sass/_partials/_timeline.scss */
   .timeline .event {
     width: 85%;
   }
 }
-/* line 90, ../sass/_partials/_timeline.scss */
+/* line 92, ../sass/_partials/_timeline.scss */
 .timeline .event.offset-first {
   margin-top: -1.5em;
 }
-/* line 94, ../sass/_partials/_timeline.scss */
+/* line 96, ../sass/_partials/_timeline.scss */
 .timeline .event img {
   margin-top: 10px;
   max-width: 100%;
 }
-/* line 99, ../sass/_partials/_timeline.scss */
+/* line 101, ../sass/_partials/_timeline.scss */
 .timeline .event:hover {
   background: white;
 }
-/* line 102, ../sass/_partials/_timeline.scss */
+/* line 104, ../sass/_partials/_timeline.scss */
 .timeline .event:hover:after {
   background: white;
 }
-/* line 107, ../sass/_partials/_timeline.scss */
+/* line 109, ../sass/_partials/_timeline.scss */
 .timeline .event:nth-of-type(2n) {
   float: left;
   clear: left;
 }
-/* line 110, ../sass/_partials/_timeline.scss */
+/* line 112, ../sass/_partials/_timeline.scss */
 .timeline .event:nth-of-type(2n):after {
   right: -5%;
   /* reset the standard declaration I defined before*/
   left: auto;
 }
 @media all and (min-width: 650px) {
-  /* line 117, ../sass/_partials/_timeline.scss */
+  /* line 119, ../sass/_partials/_timeline.scss */
   .timeline .event:after {
     display: block;
     content: ' ';
@@ -227,18 +229,18 @@
     border: 2px solid white;
   }
 }
-/* line 132, ../sass/_partials/_timeline.scss */
+/* line 134, ../sass/_partials/_timeline.scss */
 .timeline time {
   display: block;
   font-weight: bold;
 }
-/* line 141, ../sass/_partials/_timeline.scss */
+/* line 143, ../sass/_partials/_timeline.scss */
 .timeline.v2 .year {
   background: white;
   color: white;
   border: 2px solid white;
 }
-/* line 147, ../sass/_partials/_timeline.scss */
+/* line 149, ../sass/_partials/_timeline.scss */
 .timeline.v2 .event {
   border: none;
   background: #FAFAFA;
