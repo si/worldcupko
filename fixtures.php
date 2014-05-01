@@ -74,6 +74,7 @@ curl_close($ch);
   
   <script src="/js/libs/jquery-2.0.3.min.js"></script>
   <script src="/js/libs/moment.min.js"></script>
+  <script src="/js/app/worldcupko.js"></script>
   
 </body>
 </html>

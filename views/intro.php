@@ -18,7 +18,7 @@
   		<form id="newsletter">
   			<label for="email">
     			<i class="icon" data-icon="&#xe038;"></i>
-    			Get fixtures by email daily
+    			Get fixtures by daily email
   			</label>
   			<input type="email" name="email-address" id="email" placeholder="Your email address" />
   			<button type="submit">Subscribe</button>
@@ -68,10 +68,12 @@
     <div id="next">
       <i class="icon" data-icon="&#xe083"></i>
       <p>
-        Next kick off in 
-        <strong title="<?php echo ($next->start); ?>"><?php echo (strtotime($next->start) - strtotime('now'))/60/60/24  . ' days'; ?></strong>
+        Next kick off 
+        <strong title="<?php echo ($next->start); ?>">
+          <?php echo floor((strtotime($next->start) - strtotime('now'))/60/60/24)  . ' days'; ?>
+        </strong>
       </p>
-      <p><?php echo $next->summary . ', Group ' . $next->group . ', ' . $next->location; ?></p>
+      <p class="details"><?php echo $next->summary . ', Group ' . $next->group . ', ' . $next->location; ?></p>
     </div>
     
     <?php endif; ?>
