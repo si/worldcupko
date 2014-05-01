@@ -84,6 +84,16 @@
   clear: left;
   display: block;
 }
+/* line 89, ../sass/_partials/_intro.scss */
+#intro #next i,
+#intro #next strong {
+  display: inline-block;
+  font-size: 3rem;
+}
+/* line 94, ../sass/_partials/_intro.scss */
+#intro #next .details {
+  font-size: 2rem;
+}
 
 /* line 6, ../sass/_partials/_timeline.scss */
 .timeline {

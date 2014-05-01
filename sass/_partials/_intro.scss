@@ -84,6 +84,16 @@
   #next {
     clear: left;
     display: block;
+    
+    i,
+    strong {
+      display: inline-block;
+      font-size: 3rem;
+    }
+    
+    .details {
+      font-size: 2rem;
+    }
   }
 
 }
