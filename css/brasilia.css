@@ -7,13 +7,13 @@
 }
 /* line 10, ../sass/_partials/_intro.scss */
 #intro h1 {
-  font-size: 3em;
-  font-weight: normal;
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 0;
 }
 /* line 15, ../sass/_partials/_intro.scss */
 #intro h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: normal;
   margin-top: 0;
 }
