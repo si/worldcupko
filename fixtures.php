@@ -58,7 +58,7 @@ curl_close($ch);
           <span class="location"><?php echo $event->location; ?></span>,
           <span class="group"><?php echo ((strlen($event->group)==1) ? 'Group ' : '') . $event->group; ?></span>
         </p>
-        <a href="#">Remind me</a>
+        <a href="<?php echo $event->ics_url; ?>">Remind me</a>
       </li>
       <?php endforeach; ?>
     </ol>
