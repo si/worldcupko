@@ -1,0 +1,44 @@
+
+$teams :  (australia #e6b862 #446351)
+          (algeria #FFF #50bb75)
+          (argentina #218f76 #FFF)
+          (belgium #9e1e2d #cdb918)
+          (bosnia #FFF #211674)
+          (brazil #f8c128 #00843e)
+          (cameroon #025e39 #d8d413)
+          (chile #f93b2b #1140a8)
+          (colombia #e3d007 #2c3441)
+          (costa-rica #c30e1f #1b4b8d)
+          (croatia #9c0317 #FFF)
+          (ecuador #eae36e #263570)
+          (england #FFF #cd0102)
+          (france #272a3b #FFF)
+          (germany #FFF #3c3233)
+          (ghana #FFF #b01a26)
+          (greece #FFF #003c7a)
+          (holland #f96607 #FFF)
+          (honduras #FFF #2a2859)
+          (iran #FFF #c01315)
+          (italy #2c49ad #FFF)
+          (cote-divoire #d49d28 #218f76)
+          (japan #243078 #FFF)
+          (mexico #1d543f #c70609)
+          (nigeria #61a540 #215435)
+          (portugal #d13934 #094b27)
+          (russia #9e1725 #f4eeca)
+          (south-korea #dc302e #30348d)
+          (spain #c7001c #e0c49d)
+          (switzerland #aa1626 #FFF)
+          (uruguay #7691be #b2a264)
+          (usa #FFF #ec3d42);
+
+@each $team in $teams {
+    $name: nth($team, 1);
+    $primary: nth($team, 2);
+    $secondary: nth($team, 3);
+
+    .#{$name} {
+        background: $primary;
+        color: $secondary;
+    }
+}

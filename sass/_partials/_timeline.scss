@@ -65,7 +65,7 @@ $bg-entry: rgb(255,255,255);
     
     list-style-type: none;
     display: block;
-    padding: 2rem;
+    padding: 2rem 0;
     background: rgba($bg-entry,0.8);
     z-index: 15;
     
@@ -91,6 +91,24 @@ $bg-entry: rgb(255,255,255);
     
     &.offset-first {
        margin-top: -1.5em;
+    }
+    
+    h2 {
+      font-size: 1rem;
+      
+      .team {
+        display: inline-block;
+        font-size: 1.7rem;
+        width: 46%;
+        
+        &:first-child {
+          text-align: right;
+        }
+  
+        &:last-child {
+          text-align: left;
+        }
+      }
     }
     
     img {

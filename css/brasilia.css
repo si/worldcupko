@@ -1,3 +1,195 @@
+/* line 40, ../sass/_partials/_teams.scss */
+.australia {
+  background: #e6b862;
+  color: #446351;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.algeria {
+  background: white;
+  color: #50bb75;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.argentina {
+  background: #218f76;
+  color: white;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.belgium {
+  background: #9e1e2d;
+  color: #cdb918;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.bosnia {
+  background: white;
+  color: #211674;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.brazil {
+  background: #f8c128;
+  color: #00843e;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.cameroon {
+  background: #025e39;
+  color: #d8d413;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.chile {
+  background: #f93b2b;
+  color: #1140a8;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.colombia {
+  background: #e3d007;
+  color: #2c3441;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.costa-rica {
+  background: #c30e1f;
+  color: #1b4b8d;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.croatia {
+  background: #9c0317;
+  color: white;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.ecuador {
+  background: #eae36e;
+  color: #263570;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.england {
+  background: white;
+  color: #cd0102;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.france {
+  background: #272a3b;
+  color: white;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.germany {
+  background: white;
+  color: #3c3233;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.ghana {
+  background: white;
+  color: #b01a26;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.greece {
+  background: white;
+  color: #003c7a;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.holland {
+  background: #f96607;
+  color: white;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.honduras {
+  background: white;
+  color: #2a2859;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.iran {
+  background: white;
+  color: #c01315;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.italy {
+  background: #2c49ad;
+  color: white;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.cote-divoire {
+  background: #d49d28;
+  color: #218f76;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.japan {
+  background: #243078;
+  color: white;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.mexico {
+  background: #1d543f;
+  color: #c70609;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.nigeria {
+  background: #61a540;
+  color: #215435;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.portugal {
+  background: #d13934;
+  color: #094b27;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.russia {
+  background: #9e1725;
+  color: #f4eeca;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.south-korea {
+  background: #dc302e;
+  color: #30348d;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.spain {
+  background: #c7001c;
+  color: #e0c49d;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.switzerland {
+  background: #aa1626;
+  color: white;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.uruguay {
+  background: #7691be;
+  color: #b2a264;
+}
+
+/* line 40, ../sass/_partials/_teams.scss */
+.usa {
+  background: white;
+  color: #ec3d42;
+}
+
 /* line 1, ../sass/_partials/_intro.scss */
 #intro {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(/img/street-soccer-by-driftermanifesto.jpg) no-repeat fixed 50% 0/cover;
@@ -161,7 +353,7 @@
   margin: 10px 2.5%;
   list-style-type: none;
   display: block;
-  padding: 2rem;
+  padding: 2rem 0;
   background: rgba(255, 255, 255, 0.8);
   z-index: 15;
   color: #4d4d4d;
@@ -191,31 +383,49 @@
   margin-top: -1.5em;
 }
 /* line 96, ../sass/_partials/_timeline.scss */
+.timeline .event h2 {
+  font-size: 1rem;
+}
+/* line 99, ../sass/_partials/_timeline.scss */
+.timeline .event h2 .team {
+  display: inline-block;
+  font-size: 1.7rem;
+  width: 46%;
+}
+/* line 104, ../sass/_partials/_timeline.scss */
+.timeline .event h2 .team:first-child {
+  text-align: right;
+}
+/* line 108, ../sass/_partials/_timeline.scss */
+.timeline .event h2 .team:last-child {
+  text-align: left;
+}
+/* line 114, ../sass/_partials/_timeline.scss */
 .timeline .event img {
   margin-top: 10px;
   max-width: 100%;
 }
-/* line 101, ../sass/_partials/_timeline.scss */
+/* line 119, ../sass/_partials/_timeline.scss */
 .timeline .event:hover {
   background: white;
 }
-/* line 104, ../sass/_partials/_timeline.scss */
+/* line 122, ../sass/_partials/_timeline.scss */
 .timeline .event:hover:after {
   background: white;
 }
-/* line 109, ../sass/_partials/_timeline.scss */
+/* line 127, ../sass/_partials/_timeline.scss */
 .timeline .event:nth-of-type(2n) {
   float: left;
   clear: left;
 }
-/* line 112, ../sass/_partials/_timeline.scss */
+/* line 130, ../sass/_partials/_timeline.scss */
 .timeline .event:nth-of-type(2n):after {
   right: -5%;
   /* reset the standard declaration I defined before*/
   left: auto;
 }
 @media all and (min-width: 650px) {
-  /* line 119, ../sass/_partials/_timeline.scss */
+  /* line 137, ../sass/_partials/_timeline.scss */
   .timeline .event:after {
     display: block;
     content: ' ';
@@ -229,18 +439,18 @@
     border: 2px solid white;
   }
 }
-/* line 134, ../sass/_partials/_timeline.scss */
+/* line 152, ../sass/_partials/_timeline.scss */
 .timeline time {
   display: block;
   font-weight: bold;
 }
-/* line 143, ../sass/_partials/_timeline.scss */
+/* line 161, ../sass/_partials/_timeline.scss */
 .timeline.v2 .year {
   background: white;
   color: white;
   border: 2px solid white;
 }
-/* line 149, ../sass/_partials/_timeline.scss */
+/* line 167, ../sass/_partials/_timeline.scss */
 .timeline.v2 .event {
   border: none;
   background: #FAFAFA;
@@ -260,7 +470,7 @@ footer a {
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* line 9, ../sass/brasilia.scss */
+/* line 10, ../sass/brasilia.scss */
 body {
   background: #98c83d;
   color: white;
