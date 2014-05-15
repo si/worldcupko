@@ -1,0 +1,77 @@
+.date {
+  background: rgba(#000,0.9);
+  color: rgba(#FFF,0.4);
+  clear: both;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.event {
+
+  opacity: 0.9;
+  
+  &:hover {
+    opacity: 1;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+
+    .team {
+      display: inline-block;
+      padding: 5rem 0;
+      text-align: center;
+      width: 50%;
+      
+/*
+      &:first-child {
+      }
+
+      &:last-child {
+        text-align: left;
+      }
+*/
+
+    }
+    
+    .vs {
+      display: none;
+    }
+    
+  }
+  
+  .detail {
+    margin-top: -10rem;
+    text-align: center;
+    
+    span {
+      display: inline-block;
+      margin: 0 1.5rem;
+    }
+  }
+  
+  .actions {
+  
+    background: rgba(#000, 0.2);
+    margin: 5rem 0 1rem;
+    text-align: center;
+
+    a {
+      border: 2px solid rgba(#FFF,0.9);
+      color: rgba(#FFF,0.9);
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.6rem 1rem;
+      
+      &:hover {
+        background: #FFF;
+        border: 2px solid #FFF;
+        color: #333;
+        text-decoration: none;
+      }
+    }
+    
+  }
+}
