@@ -31,7 +31,7 @@ curl_close($ch);
 <body>
 
   <?php include('views/intro.php'); ?>
-  <?php include('views/timeline.php'); ?>
+  <?php include('views/stories.php'); ?>
   
   
   <footer>
