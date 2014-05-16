@@ -82,6 +82,11 @@ footer {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* line 77, ../sass/_partials/_typography.scss */
+code {
+  white-space: pre-wrap;
+}
+
 /* Layout */
 /* line 2, ../sass/_partials/_layout.scss */
 body {
