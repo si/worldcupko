@@ -1,5 +1,8 @@
 <?php if($json=='') : ?>
   <p>No fixtures currently available. Please try again shortly.</p>
+  <code class="php">
+  <?php var_dump($_SERVER); ?>
+  </code>
 <?php else: ?>
   <?php 
     foreach($json->events as $event) : 
