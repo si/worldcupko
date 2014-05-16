@@ -18,13 +18,32 @@ curl_close($ch);
 
 ?>
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
   <meta charset="utf-8">
 	<title>World Cup 2014 Kick Off</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
 	<meta name="description" content="" />
-  <meta name="keywords" content="" />
-	<meta name="robots" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="humans.txt">
+
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+	<!-- Facebook Metadata /-->
+	<meta property="fb:page_id" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content=""/>
+	<meta property="og:title" content=""/>
+
+	<!-- Google+ Metadata /-->
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
 	<link rel="stylesheet" href="/css/brasilia.css" />
 	<link rel="stylesheet" href="/css/icons.css" />
 </head>
