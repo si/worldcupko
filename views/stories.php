@@ -26,8 +26,14 @@
             <i class="icon" data-icon="&#xe094;"></i>
             <?php echo date('ga', strtotime($event->start)); ?>
           </span>
-          <span class="location"><?php echo $event->location; ?></span>
-          <span class="group"><?php echo ((strlen($event->group)==1) ? 'Group ' : '') . $event->group; ?></span>
+          <span class="location">
+            <i class="icon icon-geolocalizator"></i>
+            <?php echo $event->location; ?>
+          </span>
+          <span class="group">
+            <i class="icon icon-list"></i>
+            <?php echo ((strlen($event->group)==1) ? 'Group ' : '') . $event->group; ?>
+          </span>
         </p>
         <div class="actions">
           <a href="<?php echo $event->ics_url; ?>">Add to calendar</a>
