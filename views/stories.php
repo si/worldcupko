@@ -15,7 +15,7 @@
       <?php
       endif;
       ?>
-      <div class="event">
+      <div class="event <?php echo normalise($event->location) . ' ' . normalise(((strlen($event->group)==1) ? 'Group ' : '') . $event->group); ?>">
         <h2>
           <?php if($event->home_team->name!='') : ?>
             <span class="team <?php echo strtolower(str_replace(' ','-',$event->home_team->name)); ?>"><?php echo $event->home_team->name; ?></span><span class="vs"> v </span><span class="team <?php echo strtolower(str_replace(' ','-',$event->away_team->name)); ?>"><?php echo $event->away_team->name; ?></span>
@@ -34,7 +34,7 @@
           </span>
           <span class="group">
             <i class="icon icon-list"></i>
-            <?php echo ((strlen($event->group)==1) ? 'Group ' : '') . $event->group; ?>
+            <a href="<?php echo url('group', $event->group); ?>"><?php echo ((strlen($event->group)==1) ? 'Group ' : '') . $event->group; ?></a>
           </span>
         </p>
         <div class="actions">
