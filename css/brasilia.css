@@ -204,12 +204,16 @@
   margin-bottom: 0;
 }
 /* line 15, ../sass/_partials/_intro.scss */
+#intro h1 a {
+  text-decoration: none;
+}
+/* line 19, ../sass/_partials/_intro.scss */
 #intro h2 {
   font-size: 1.6rem;
   font-weight: normal;
   margin: 0 0 5rem;
 }
-/* line 23, ../sass/_partials/_intro.scss */
+/* line 27, ../sass/_partials/_intro.scss */
 #intro #download,
 #intro #newsletter,
 #intro #social {
@@ -218,7 +222,7 @@
   padding: 0;
   width: 30%;
 }
-/* line 29, ../sass/_partials/_intro.scss */
+/* line 33, ../sass/_partials/_intro.scss */
 #intro #download i,
 #intro #newsletter i,
 #intro #social i {
@@ -226,74 +230,74 @@
   font-size: 3rem;
   transition: all 0.5s ease;
 }
-/* line 34, ../sass/_partials/_intro.scss */
+/* line 38, ../sass/_partials/_intro.scss */
 #intro #download i:hover,
 #intro #newsletter i:hover,
 #intro #social i:hover {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
 }
-/* line 40, ../sass/_partials/_intro.scss */
+/* line 44, ../sass/_partials/_intro.scss */
 #intro #download a,
 #intro #newsletter a,
 #intro #social a {
   color: #FFF;
 }
-/* line 48, ../sass/_partials/_intro.scss */
+/* line 52, ../sass/_partials/_intro.scss */
 #intro #download a {
   display: inline-block;
   max-width: 11em;
   text-decoration: none;
 }
-/* line 53, ../sass/_partials/_intro.scss */
+/* line 57, ../sass/_partials/_intro.scss */
 #intro #download a small {
   display: block;
   font-size: 0.7em;
 }
-/* line 62, ../sass/_partials/_intro.scss */
+/* line 66, ../sass/_partials/_intro.scss */
 #intro #newsletter label {
   display: block;
 }
-/* line 66, ../sass/_partials/_intro.scss */
+/* line 70, ../sass/_partials/_intro.scss */
 #intro #newsletter input, #intro #newsletter button {
   border: none;
   display: inline-block;
   font-family: Avenir, Helvetica, sans-serif;
   padding: 0.75em;
 }
-/* line 73, ../sass/_partials/_intro.scss */
+/* line 77, ../sass/_partials/_intro.scss */
 #intro #newsletter input {
   background: rgba(255, 255, 255, 0.8);
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 77, ../sass/_partials/_intro.scss */
+/* line 81, ../sass/_partials/_intro.scss */
 #intro #newsletter button {
   background: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 0.8);
 }
-/* line 84, ../sass/_partials/_intro.scss */
+/* line 88, ../sass/_partials/_intro.scss */
 #intro #next {
   clear: left;
   display: block;
   margin: 0 0 3rem;
 }
-/* line 89, ../sass/_partials/_intro.scss */
+/* line 93, ../sass/_partials/_intro.scss */
 #intro #next p {
   margin: 0;
   padding: 0;
 }
-/* line 95, ../sass/_partials/_intro.scss */
+/* line 99, ../sass/_partials/_intro.scss */
 #intro #next i,
 #intro #next strong {
   display: block;
   font-size: 3rem;
 }
-/* line 100, ../sass/_partials/_intro.scss */
+/* line 104, ../sass/_partials/_intro.scss */
 #intro #next strong {
   font-weight: normal;
   padding: 1rem 0 0;
 }
-/* line 105, ../sass/_partials/_intro.scss */
+/* line 109, ../sass/_partials/_intro.scss */
 #intro #next strong span {
   display: inline-block;
   font-size: 1rem;
@@ -302,13 +306,13 @@
   padding: 0;
   width: 4rem;
 }
-/* line 113, ../sass/_partials/_intro.scss */
+/* line 117, ../sass/_partials/_intro.scss */
 #intro #next strong span em {
   font-size: 3rem;
   font-style: normal;
   font-weight: bold;
 }
-/* line 122, ../sass/_partials/_intro.scss */
+/* line 126, ../sass/_partials/_intro.scss */
 #intro #next .details {
   font-size: 1.5rem;
   font-weight: bold;
@@ -316,7 +320,7 @@
   padding: 0;
 }
 
-/* line 132, ../sass/_partials/_intro.scss */
+/* line 136, ../sass/_partials/_intro.scss */
 .ad {
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);
@@ -416,15 +420,20 @@
   display: inline-block;
   font-size: 0.75rem;
   font-weight: bold;
-  padding: 0.6rem 1rem;
+  margin: 0 0.75rem 0 0;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   transition: all 0.1s ease;
 }
-/* line 96, ../sass/_partials/_stories.scss */
+/* line 97, ../sass/_partials/_stories.scss */
 .event .actions a:hover {
   background: #FFF;
   border: 2px solid #FFF;
   color: #333;
+}
+/* line 103, ../sass/_partials/_stories.scss */
+.event .actions a:last-child {
+  margin: 0;
 }
 
 /* line 6, ../sass/_partials/_footer.scss */
@@ -447,4 +456,13 @@ body {
   font-family: Avenir, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+/* line 18, ../sass/brasilia.scss */
+a {
+  color: rgba(255, 255, 255, 0.9);
+}
+/* line 21, ../sass/brasilia.scss */
+a:hover, a:focus {
+  color: white;
 }
