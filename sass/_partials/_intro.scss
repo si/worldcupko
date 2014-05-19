@@ -85,10 +85,33 @@
     clear: left;
     display: block;
     
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
     i,
     strong {
       display: block;
       font-size: 3rem;
+    }
+    
+    strong {
+
+      padding: 1rem 0;
+      
+      span {
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 0.8;
+        width: 4rem;
+        
+        em {
+          font-size: 3rem;
+          font-style: normal;
+        }
+        
+      }
     }
     
     .details {

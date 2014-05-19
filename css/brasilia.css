@@ -276,18 +276,39 @@
   clear: left;
   display: block;
 }
-/* line 89, ../sass/_partials/_intro.scss */
+/* line 88, ../sass/_partials/_intro.scss */
+#intro #next p {
+  margin: 0;
+  padding: 0;
+}
+/* line 94, ../sass/_partials/_intro.scss */
 #intro #next i,
 #intro #next strong {
   display: block;
   font-size: 3rem;
 }
-/* line 94, ../sass/_partials/_intro.scss */
+/* line 99, ../sass/_partials/_intro.scss */
+#intro #next strong {
+  padding: 1rem 0;
+}
+/* line 103, ../sass/_partials/_intro.scss */
+#intro #next strong span {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 0.8;
+  width: 4rem;
+}
+/* line 109, ../sass/_partials/_intro.scss */
+#intro #next strong span em {
+  font-size: 3rem;
+  font-style: normal;
+}
+/* line 117, ../sass/_partials/_intro.scss */
 #intro #next .details {
   font-size: 2rem;
 }
 
-/* line 101, ../sass/_partials/_intro.scss */
+/* line 124, ../sass/_partials/_intro.scss */
 .ad {
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);
