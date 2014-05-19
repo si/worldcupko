@@ -36,7 +36,7 @@ $(document).ready(function(){
     
     // Hide all, show filter
     $('.event, .date').hide();
-    $(selector).show('fast');
+    $(selector).slideDown('slow');
   }
 
 });
