@@ -2,7 +2,7 @@
 
 $endpoint = ($_SERVER['SERVER_ADDR']=='127.0.0.1') 
               ? 'http://local.kickoffcalendars.com/calendars/view/5.json' 
-              : 'http://alpha.kickoffcalendars.com/calendars/export/5/json';
+              : 'http://alpha.kickoffcalendars.com/calendars/view/5.json';
 $facebook_endpoint = 'http://graph.facebook.com/http://www.worldcupkickoff.com';
 
 // create a new cURL resource
