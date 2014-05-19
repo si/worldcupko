@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+  /*
+  Initiate Next Game Countdown
+  */
   var element = $('#next').find('strong'),
       timestamp = element.attr('title'),
       kickoff;
@@ -17,5 +20,23 @@ $(document).ready(function(){
       ));
     }
   );
+  
+  /*
+  Filter events based on URL
+  */
+  var url = window.location.pathname,
+      selector;
+      
+  // Identify filter type (summary, date, location, group)
+  if(url!='/') {
+    selector = url.substring(1);
+    selector = selector.replace('/','-');
+    selector = '.' + selector;
+    console.log(selector);
+    
+    // Hide all, show filter
+    $('.event, .date').hide();
+    $(selector).show('fast');
+  }
 
 });
