@@ -46,15 +46,7 @@
         </div>			
   			
         <div class="facebook">
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=252313181472957";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
-          <a href="http://www.facebook.com/worldcupkickoff" class="fb-like" data-href="https://www.facebook.com/worldcupkickoff" data-layout="standard" data-colorscheme="dark" data-action="recommend" data-show-faces="true" data-share="false">Like us on Facebook</a>
+          <a href="http://www.facebook.com/worldcupkickoff"><?php echo $facebook_data->shares; ?> Facebook likes</a>
         </div>
   			
   		</section>
@@ -70,7 +62,7 @@
       <p>
         Next kick off  
         <strong title="<?php echo ($next->start); ?>">
-          <?php echo floor((strtotime($next->start) - strtotime('now'))/60/60/24)  . ' days'; ?>
+          <?php echo $next->start; ?>
         </strong>
       </p>
       <p class="details"><?php echo $next->summary. ', ' . $next->location . ', Group ' . $next->group; ?></p>

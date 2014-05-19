@@ -1,6 +1,9 @@
 <?php
 
-$endpoint = ($_SERVER['SERVER_ADDR']=='127.0.0.1') ? 'http://local.kickoffcalendars.com/calendars/view/5.json' : 'http://alpha.kickoffcalendars.com/calendars/export/5/json';
+$endpoint = ($_SERVER['SERVER_ADDR']=='127.0.0.1') 
+              ? 'http://local.kickoffcalendars.com/calendars/view/5.json' 
+              : 'http://alpha.kickoffcalendars.com/calendars/export/5/json';
+$facebook_endpoint = 'http://graph.facebook.com/http://www.worldcupkickoff.com';
 
 // create a new cURL resource
 $ch = curl_init();
@@ -10,11 +13,19 @@ curl_setopt($ch, CURLOPT_URL, $endpoint);
 curl_setopt($ch, CURLOPT_HEADER, 0);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $data = curl_exec($ch);
-
 $json = ($data!='') ? json_decode($data) : '';
+
+// set URL and other appropriate options
+curl_setopt($ch, CURLOPT_URL, $facebook_endpoint);
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+$facebook_response = curl_exec($ch);
+$facebook_data = ($facebook_response!='') ? json_decode($facebook_response) : '';
 
 // close cURL resource, and free up system resources
 curl_close($ch);
+
+
 
 ?>
 <!DOCTYPE html>
@@ -46,6 +57,7 @@ curl_close($ch);
 
 	<link rel="stylesheet" href="/css/brasilia.css" />
 	<link rel="stylesheet" href="/css/icons.css" />
+
 </head>
 <body>
 
@@ -62,6 +74,7 @@ curl_close($ch);
   
   <script src="/js/libs/jquery-2.0.3.min.js"></script>
   <script src="/js/libs/moment.min.js"></script>
+	<script src="/js/plugins/jquery.countdown.min.js"></script>
   <script src="/js/app/worldcupko.js"></script>
   
 </body>
