@@ -334,23 +334,32 @@
   margin: 0;
   text-align: center;
 }
+/* line 9, ../sass/_partials/_stories.scss */
+.date a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+/* line 13, ../sass/_partials/_stories.scss */
+.date a:hover, .date a:focus {
+  color: white;
+}
 
-/* line 10, ../sass/_partials/_stories.scss */
+/* line 19, ../sass/_partials/_stories.scss */
 .event {
   opacity: 0.9;
   position: relative;
   transition: all 0.1s ease;
 }
-/* line 16, ../sass/_partials/_stories.scss */
+/* line 25, ../sass/_partials/_stories.scss */
 .event:hover {
   opacity: 1;
 }
-/* line 20, ../sass/_partials/_stories.scss */
+/* line 29, ../sass/_partials/_stories.scss */
 .event h2 {
   margin: 0;
   padding: 0;
 }
-/* line 24, ../sass/_partials/_stories.scss */
+/* line 33, ../sass/_partials/_stories.scss */
 .event h2 .team {
   display: inline-block;
   padding: 5rem 0;
@@ -365,11 +374,11 @@
         }
   */
 }
-/* line 41, ../sass/_partials/_stories.scss */
+/* line 50, ../sass/_partials/_stories.scss */
 .event h2 .vs {
   display: none;
 }
-/* line 47, ../sass/_partials/_stories.scss */
+/* line 56, ../sass/_partials/_stories.scss */
 .event .detail {
   /*     background: linear-gradient( rgba(#000, 0.3) 0%, rgba(#000, 0) 100%); */
   position: absolute;
@@ -382,12 +391,20 @@
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
   z-index: 20;
 }
-/* line 59, ../sass/_partials/_stories.scss */
+/* line 68, ../sass/_partials/_stories.scss */
 .event .detail span {
   display: inline-block;
   margin: 0 2rem;
 }
-/* line 65, ../sass/_partials/_stories.scss */
+/* line 72, ../sass/_partials/_stories.scss */
+.event .detail span a {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 75, ../sass/_partials/_stories.scss */
+.event .detail span a:hover, .event .detail span a:focus {
+  color: white;
+}
+/* line 82, ../sass/_partials/_stories.scss */
 .event .actions {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
   position: absolute;
@@ -399,7 +416,7 @@
   text-align: center;
   z-index: 30;
 }
-/* line 77, ../sass/_partials/_stories.scss */
+/* line 94, ../sass/_partials/_stories.scss */
 .event .actions a {
   border: 2px solid rgba(255, 255, 255, 0.9);
   color: rgba(255, 255, 255, 0.9);
@@ -410,7 +427,7 @@
   text-decoration: none;
   transition: all 0.1s ease;
 }
-/* line 87, ../sass/_partials/_stories.scss */
+/* line 104, ../sass/_partials/_stories.scss */
 .event .actions a:hover {
   background: #FFF;
   border: 2px solid #FFF;

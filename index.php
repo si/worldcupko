@@ -1,4 +1,5 @@
 <?php
+include('_includes/global.php');
 
 $endpoint = ($_SERVER['SERVER_ADDR']=='127.0.0.1') 
               ? 'http://local.kickoffcalendars.com/calendars/view/5.json' 

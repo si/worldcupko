@@ -6,10 +6,12 @@
 <?php else: ?>
   <?php 
     foreach($json->events as $event) : 
-      if( $date != date('D j M', strtotime($event->start)) ) :
-        $date = date('D j M', strtotime($event->start));
+      if( $date != date('l j F Y', strtotime($event->start)) ) :
+        $date = date('l j F Y', strtotime($event->start));
       ?>
-      <p class="date"><?php echo $date; ?></p>
+      <p class="date">
+        <a href="<?php echo url('date', date('j F Y', strtotime($event->start))); ?>"><?php echo $date; ?></a>
+      </p>
       <?php
       endif;
       ?>
@@ -28,7 +30,7 @@
           </span>
           <span class="location">
             <i class="icon icon-geolocalizator"></i>
-            <?php echo $event->location; ?>
+            <a href="<?php echo url('location', $event->location); ?>"><?php echo $event->location; ?></a>
           </span>
           <span class="group">
             <i class="icon icon-list"></i>
@@ -37,6 +39,7 @@
         </p>
         <div class="actions">
           <a href="<?php echo $event->ics_url; ?>">Add to calendar</a>
+          <a href="<?php echo url('event',$event->summary); ?>">Tell your friends</a>
         </div>
       </div>
   <?php endforeach; ?>
