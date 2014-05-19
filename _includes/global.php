@@ -11,6 +11,9 @@ function url($type, $text) {
     case 'location':
       return '/venue/' . normalise($text);
       break;
+    case 'group':
+      return '/group/' . normalise($text);
+      break;
     case 'team':
       return '/team/' . normalise($text);
       break;
