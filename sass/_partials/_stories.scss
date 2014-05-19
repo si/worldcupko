@@ -58,15 +58,23 @@
     
     span {
       display: inline-block;
-      margin: 0 2rem;
+      width: 20%;
+      margin: 0;
+      
+      &:first-child {
+        text-align: left;
+      }
+
+      &:nth-child(3) {
+        text-align: center;
+      }
+
+      &:last-child {
+        text-align: right;
+      }
       
       a {
-        color: rgba(#FFF, 0.8);
         text-decoration: none;
-        
-        &:hover, &:focus {
-          color: rgba(#FFF, 1);
-        }
       }
     }
   }
