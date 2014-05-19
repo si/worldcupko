@@ -84,6 +84,7 @@
   #next {
     clear: left;
     display: block;
+    margin: 0 0 3rem;
     
     p {
       margin: 0;
@@ -98,24 +99,31 @@
     
     strong {
 
-      padding: 1rem 0;
+      font-weight: normal;
+      padding: 1rem 0 0;
       
       span {
         display: inline-block;
         font-size: 1rem;
         line-height: 0.8;
+        margin: 0;
+        padding: 0;
         width: 4rem;
         
         em {
           font-size: 3rem;
           font-style: normal;
+          font-weight: bold;
         }
         
       }
     }
     
     .details {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
     }
   }
 
