@@ -15,12 +15,12 @@
         </a>
       </div>
 
-  		<form id="newsletter">
-  			<label for="email">
+  		<form id="newsletter" action="http://unstyled.us5.list-manage.com/subscribe/post?u=72272c8bc5aca2779d7c6c61f&amp;id=d759ec2579" method="post" name="mc-embedded-subscribe-form" target="_blank">
+  			<label for="mce-email">
     			<i class="icon" data-icon="&#xe038;"></i>
     			<span>Get fixtures by email daily</span>
-    			<input type="email" name="email-address" id="email" placeholder="Your email address" />
-    			<button type="submit">Subscribe</button>
+    			<input type="email"  name="EMAIL" id="mce-email" required placeholder="Your email address" />
+    			<button type="submit" name="subscribe">Subscribe</button>
   			</label>
   		</form>
   		
