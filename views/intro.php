@@ -2,7 +2,7 @@
 
     <header>
       <h1><a href="/">World Cup 2014 Kick Off</a></h1>
-      <h2>Don't miss a single World Cup kick off from Brazil</h2>
+      <h2>Never miss a single World Cup kick off from Brazil</h2>
     </header>
     
     <div class="actions">
@@ -10,46 +10,45 @@
       <div id="download">
         <a href="<?php echo (isset($json->calendar->ics_url)) ? $json->calendar->ics_url : ''; ?>">
           <i class="icon" data-icon="&#xe082;"></i>
-          Download kick off times to your calendar
-          <small>for Windows, Mac or mobile</small>
+          <span>Download kick off times to your calendar
+          <small>for Windows, Mac or mobile</small></span>
         </a>
       </div>
 
   		<form id="newsletter">
   			<label for="email">
     			<i class="icon" data-icon="&#xe038;"></i>
-    			Get fixtures by email daily
+    			<span>Get fixtures by email daily</span>
+    			<input type="email" name="email-address" id="email" placeholder="Your email address" />
+    			<button type="submit">Subscribe</button>
   			</label>
-  			<input type="email" name="email-address" id="email" placeholder="Your email address" />
-  			<button type="submit">Subscribe</button>
   		</form>
   		
-  		<section id="social">
+  		<div id="social">
         <i class="icon" data-icon="&#xe02a;"></i>
-        <div class="twitter">
-          <a href="https://twitter.com/worldcupko" class="twitter-follow-button" data-show-count="true" data-show-screen-name="true">Follow @worldcupko</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        </div>
+        <span>Share the love for football</span>
+        <ul class="share">
+          <li class="facebook">
+            <div class="fb-like" data-href="http://www.worldcupkickoff.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.com/worldcupko" data-count="horizontal">Tweet</a>
+            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+          </li>
+          <li class="google-plus">
+            <div class="g-plusone" data-size="medium" data-href="http://alpha.worldcupkickoff.com"></div>
+          </li>
+        </ul>
         
-        <div class="google">      
-  
-          <a href="//plus.google.com/115685022501320155518" class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/115685022501320155518" data-rel="author">+1 on Google</a>
-          
-          <script type="text/javascript">
+        <script type="text/javascript">
             (function() {
               var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
               po.src = 'https://apis.google.com/js/plusone.js';
               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
             })();
-          </script>
-          
-        </div>			
-  			
-        <div class="facebook">
-          <a href="http://www.facebook.com/worldcupkickoff"><?php echo $facebook_data->shares; ?> Facebook likes</a>
-        </div>
-  			
-  		</section>
+        </script>  			
+        
+  		</div>
     		
     </div>
     
@@ -71,7 +70,7 @@
     <?php endif; ?>
     
     <div class="ad">
-      Ad can go here
+      <a href="#">Your ad can go here</a>
     </div>
     
   </section>
