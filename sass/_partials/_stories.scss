@@ -26,16 +26,21 @@
     opacity: 1;
   }
 
-  h2 {
+  h3 {
     margin: 0;
     padding: 0;
 
     .team {
       display: inline-block;
+      margin: 0;
       padding: 5rem 0;
       text-align: center;
+      text-decoration: none;
       width: 50%;
       
+      &:hover, &:focus {
+        color: inherit;
+      }
     }
     
     .vs {
@@ -45,12 +50,11 @@
   }
   
   .detail {
-/*     background: linear-gradient( rgba(#000, 0.3) 0%, rgba(#000, 0) 100%); */
     position: absolute;
     top: 0;
     left: 0;
-    margin: 0;
-    padding: 1.5rem 0;
+    margin: 0.75rem;
+    padding: 0.75rem 0;
     right: 0;
     text-align: center;
     text-shadow: 0px 1px 0px rgba(#000,0.3);
