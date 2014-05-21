@@ -9,20 +9,24 @@
       if( $date != date('l j F Y', strtotime($event->start)) ) :
         $date = date('l j F Y', strtotime($event->start));
       ?>
-      <p class="date">
+      <h2 class="date" data-date="<?php echo date('j F Y', strtotime($event->start)); ?>">
         <a href="<?php echo url('date', date('j F Y', strtotime($event->start))); ?>"><?php echo $date; ?></a>
-      </p>
+      </h2>
       <?php
       endif;
       ?>
       <div class="event <?php echo normalise($event->summary) . ' venue-' . normalise($event->location) . ' ' . ' date-' . normalise(date('j F Y', strtotime($event->start))) . ' ' . normalise(((strlen($event->group)==1) ? 'Group ' : '') . $event->group); ?>">
-        <h2>
+        <h3>
           <?php if($event->home_team->name!='') : ?>
-            <span class="team <?php echo strtolower(str_replace(' ','-',$event->home_team->name)); ?>"><?php echo $event->home_team->name; ?></span><span class="vs"> v </span><span class="team <?php echo strtolower(str_replace(' ','-',$event->away_team->name)); ?>"><?php echo $event->away_team->name; ?></span>
+            <a href="<?php echo url('team', $event->home_team->name); ?>" class="team <?php echo strtolower(str_replace(' ','-',$event->home_team->name)); ?>">
+              <?php echo $event->home_team->name; ?>
+            </a><span class="vs"> v </span><a href="<?php echo url('team', $event->away_team->name); ?>" class="team <?php echo strtolower(str_replace(' ','-',$event->away_team->name)); ?>">
+              <?php echo $event->away_team->name; ?>
+            </a>
           <?php else: ?>
             <?php echo $event->summary; ?>
           <?php endif; ?>
-        </h2>
+        </h3>
         <p class="detail">
           <span class="time" data-timestamp="<?php echo $event->start; ?>">
             <i class="icon" data-icon="&#xe094;"></i>
