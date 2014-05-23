@@ -190,7 +190,7 @@
   color: #ec3d42;
 }
 
-/* line 1, ../sass/_partials/_intro.scss */
+/* line 5, ../sass/_partials/_intro.scss */
 #intro {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(/img/street-soccer-by-driftermanifesto.jpg) no-repeat fixed 50% 0/cover;
   color: #FFF;
@@ -198,23 +198,23 @@
   text-align: center;
   /* iPhone 4 - 960 × 640 */
 }
-/* line 10, ../sass/_partials/_intro.scss */
+/* line 14, ../sass/_partials/_intro.scss */
 #intro h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 0;
 }
-/* line 15, ../sass/_partials/_intro.scss */
+/* line 19, ../sass/_partials/_intro.scss */
 #intro h1 a {
   text-decoration: none;
 }
-/* line 19, ../sass/_partials/_intro.scss */
+/* line 23, ../sass/_partials/_intro.scss */
 #intro h2 {
   font-size: 1.6rem;
   font-weight: normal;
   margin: 0 0 5rem;
 }
-/* line 27, ../sass/_partials/_intro.scss */
+/* line 31, ../sass/_partials/_intro.scss */
 #intro #download,
 #intro #newsletter,
 #intro #social {
@@ -225,82 +225,117 @@
   vertical-align: top;
   width: 30%;
 }
-/* line 35, ../sass/_partials/_intro.scss */
+/* line 39, ../sass/_partials/_intro.scss */
 #intro #download i,
 #intro #newsletter i,
 #intro #social i {
-  display: block;
+  display: inline-block;
   font-size: 3rem;
 }
-/* line 44, ../sass/_partials/_intro.scss */
+/* line 48, ../sass/_partials/_intro.scss */
 #intro #download a {
   display: inline-block;
   max-width: 11em;
   text-decoration: none;
 }
-/* line 49, ../sass/_partials/_intro.scss */
+/* line 53, ../sass/_partials/_intro.scss */
 #intro #download a small {
   display: block;
   font-size: 0.7em;
 }
-/* line 58, ../sass/_partials/_intro.scss */
+/* line 62, ../sass/_partials/_intro.scss */
 #intro #newsletter label {
   display: block;
 }
-/* line 62, ../sass/_partials/_intro.scss */
+/* line 66, ../sass/_partials/_intro.scss */
 #intro #newsletter input, #intro #newsletter button {
   border: none;
   display: inline-block;
   font-family: Avenir, Helvetica, sans-serif;
 }
-/* line 68, ../sass/_partials/_intro.scss */
+/* line 72, ../sass/_partials/_intro.scss */
 #intro #newsletter input {
   background: rgba(255, 255, 255, 0.8);
   color: rgba(0, 0, 0, 0.8);
   padding: 0.75em;
 }
-/* line 73, ../sass/_partials/_intro.scss */
+/* line 77, ../sass/_partials/_intro.scss */
 #intro #newsletter button {
   background: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 0.8);
   padding: 0.80em;
 }
-/* line 83, ../sass/_partials/_intro.scss */
+/* line 87, ../sass/_partials/_intro.scss */
 #intro #social ul {
+  display: inline-block;
   list-style: none;
-  margin: 0;
+  margin: 0 0 2rem;
   padding: 0;
+  width: 70%;
+  vertical-align: top;
 }
-/* line 88, ../sass/_partials/_intro.scss */
+/* line 95, ../sass/_partials/_intro.scss */
 #intro #social ul li {
   display: inline-block;
-  margin: 0 3% 0 0;
+  margin: 0.75rem 2.5% 0 0;
   padding: 0;
   width: 30%;
 }
-/* line 97, ../sass/_partials/_intro.scss */
+/* line 101, ../sass/_partials/_intro.scss */
+#intro #social ul li a {
+  display: block;
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  padding: 0.3rem;
+  text-align: center;
+}
+/* line 108, ../sass/_partials/_intro.scss */
+#intro #social ul li.facebook a {
+  background: rgba(0, 101, 193, 0.8);
+}
+/* line 111, ../sass/_partials/_intro.scss */
+#intro #social ul li.facebook a:hover {
+  background: #0065c1;
+}
+/* line 115, ../sass/_partials/_intro.scss */
+#intro #social ul li.twitter a {
+  background: rgba(0, 159, 194, 0.8);
+}
+/* line 118, ../sass/_partials/_intro.scss */
+#intro #social ul li.twitter a:hover {
+  background: #009fc2;
+}
+/* line 122, ../sass/_partials/_intro.scss */
+#intro #social ul li.google a {
+  background: rgba(193, 67, 67, 0.8);
+}
+/* line 125, ../sass/_partials/_intro.scss */
+#intro #social ul li.google a:hover {
+  background: #c14343;
+}
+/* line 136, ../sass/_partials/_intro.scss */
 #intro #next {
   clear: left;
   display: block;
   margin: 0 0 3rem;
 }
-/* line 102, ../sass/_partials/_intro.scss */
+/* line 141, ../sass/_partials/_intro.scss */
 #intro #next p {
   margin: 0;
   padding: 0;
 }
-/* line 108, ../sass/_partials/_intro.scss */
+/* line 147, ../sass/_partials/_intro.scss */
 #intro #next i,
 #intro #next strong {
   display: block;
   font-size: 3rem;
 }
-/* line 113, ../sass/_partials/_intro.scss */
+/* line 152, ../sass/_partials/_intro.scss */
 #intro #next strong {
   font-weight: normal;
   padding: 1rem 0 0;
 }
-/* line 118, ../sass/_partials/_intro.scss */
+/* line 157, ../sass/_partials/_intro.scss */
 #intro #next strong span {
   display: inline-block;
   font-size: 1rem;
@@ -309,13 +344,13 @@
   padding: 0;
   width: 4rem;
 }
-/* line 126, ../sass/_partials/_intro.scss */
+/* line 165, ../sass/_partials/_intro.scss */
 #intro #next strong span em {
   font-size: 3rem;
   font-style: normal;
   font-weight: bold;
 }
-/* line 135, ../sass/_partials/_intro.scss */
+/* line 174, ../sass/_partials/_intro.scss */
 #intro #next .details {
   font-size: 1.5rem;
   font-weight: bold;
@@ -323,19 +358,19 @@
   padding: 0;
 }
 @media only screen and (max-width: 900px) {
-  /* line 146, ../sass/_partials/_intro.scss */
+  /* line 185, ../sass/_partials/_intro.scss */
   #intro #intro {
     padding: 4rem 0;
   }
-  /* line 149, ../sass/_partials/_intro.scss */
+  /* line 188, ../sass/_partials/_intro.scss */
   #intro h1 {
     font-size: 2rem;
   }
-  /* line 152, ../sass/_partials/_intro.scss */
+  /* line 191, ../sass/_partials/_intro.scss */
   #intro h2 {
     font-size: 1.3rem;
   }
-  /* line 158, ../sass/_partials/_intro.scss */
+  /* line 197, ../sass/_partials/_intro.scss */
   #intro #download,
   #intro #newsletter,
   #intro #social {
@@ -345,49 +380,49 @@
     width: 100%;
     text-align: left;
   }
-  /* line 165, ../sass/_partials/_intro.scss */
+  /* line 204, ../sass/_partials/_intro.scss */
   #intro #download i,
   #intro #newsletter i,
   #intro #social i {
     display: inline-block;
     width: 2rem;
-    margin: 0 1.5rem 0 3rem;
+    margin: 0 1.5rem;
   }
-  /* line 175, ../sass/_partials/_intro.scss */
+  /* line 214, ../sass/_partials/_intro.scss */
   #intro #download a {
     display: block;
     max-width: 100%;
   }
-  /* line 179, ../sass/_partials/_intro.scss */
+  /* line 218, ../sass/_partials/_intro.scss */
   #intro #download a span {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 190, ../sass/_partials/_intro.scss */
+  /* line 229, ../sass/_partials/_intro.scss */
   #intro #newsletter label {
     display: block;
     max-width: 100%;
   }
-  /* line 194, ../sass/_partials/_intro.scss */
+  /* line 233, ../sass/_partials/_intro.scss */
   #intro #newsletter label span {
     display: none;
   }
-  /* line 198, ../sass/_partials/_intro.scss */
+  /* line 237, ../sass/_partials/_intro.scss */
   #intro #newsletter label input, #intro #newsletter label button {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 209, ../sass/_partials/_intro.scss */
+  /* line 248, ../sass/_partials/_intro.scss */
   #intro #social span {
     display: none;
   }
 }
 
-/* line 219, ../sass/_partials/_intro.scss */
+/* line 258, ../sass/_partials/_intro.scss */
 .ad {
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);
@@ -464,7 +499,7 @@
 /* line 65, ../sass/_partials/_stories.scss */
 .event .detail span {
   display: inline-block;
-  width: 20%;
+  width: 25%;
   margin: 0;
 }
 /* line 70, ../sass/_partials/_stories.scss */
@@ -472,18 +507,19 @@
   text-align: left;
 }
 /* line 74, ../sass/_partials/_stories.scss */
-.event .detail span:nth-child(3) {
+.event .detail span:nth-child(2) {
   text-align: center;
+  width: 35%;
 }
-/* line 78, ../sass/_partials/_stories.scss */
+/* line 79, ../sass/_partials/_stories.scss */
 .event .detail span:last-child {
   text-align: right;
 }
-/* line 82, ../sass/_partials/_stories.scss */
+/* line 83, ../sass/_partials/_stories.scss */
 .event .detail span a {
   text-decoration: none;
 }
-/* line 88, ../sass/_partials/_stories.scss */
+/* line 89, ../sass/_partials/_stories.scss */
 .event .actions {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
   position: absolute;
@@ -495,25 +531,25 @@
   text-align: center;
   z-index: 30;
 }
-/* line 100, ../sass/_partials/_stories.scss */
+/* line 101, ../sass/_partials/_stories.scss */
 .event .actions a {
   border: 2px solid rgba(255, 255, 255, 0.9);
   color: rgba(255, 255, 255, 0.9);
   display: inline-block;
   font-size: 0.75rem;
   font-weight: bold;
-  margin: 0 0.75rem 0 0;
+  margin: 0 0.4rem 0 0;
   padding: 0.75rem 1rem;
   text-decoration: none;
   transition: all 0.1s ease;
 }
-/* line 111, ../sass/_partials/_stories.scss */
+/* line 112, ../sass/_partials/_stories.scss */
 .event .actions a:hover {
   background: #FFF;
   border: 2px solid #FFF;
   color: #333;
 }
-/* line 117, ../sass/_partials/_stories.scss */
+/* line 118, ../sass/_partials/_stories.scss */
 .event .actions a:last-child {
   margin: 0;
 }
