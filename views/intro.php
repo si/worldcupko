@@ -29,14 +29,14 @@
         <span>Share the love for football</span>
         <ul class="share">
           <li class="facebook">
-            <div class="fb-like" data-href="http://www.worldcupkickoff.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+            <a href="http://www.facebook.com/worldcupkickoff" class="fb-like" data-href="http://www.worldcupkickoff.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true">Like</a>
           </li>
           <li class="twitter">
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.com/worldcupko" data-count="horizontal">Tweet</a>
             <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
           </li>
-          <li class="google-plus">
-            <div class="g-plusone" data-size="medium" data-href="http://alpha.worldcupkickoff.com"></div>
+          <li class="google">
+            <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>" class="g-plusone" data-size="medium" data-href="http://http://<?php echo $_SERVER['SERVER_NAME']; ?>">+1</a>
           </li>
         </ul>
         
