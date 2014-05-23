@@ -1,7 +1,5 @@
 <?php
-$endpoint = ($_SERVER['SERVER_NAME'] == 'wcko.dev') 
-              ? 'http://local.kickoffcalendars.com/calendars/view/5.json' 
-              : 'http://alpha.kickoffcalendars.com/calendars/view/5.json';
+$endpoint = 'http://alpha.kickoffcalendars.com/calendars/view/5.json';
 $facebook_endpoint = 'http://graph.facebook.com/http://www.worldcupkickoff.com';
 
 // create a new cURL resource
