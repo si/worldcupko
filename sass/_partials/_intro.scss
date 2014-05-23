@@ -1,3 +1,7 @@
+$facebook : #0065c1;
+$twitter : #009fc2;
+$google : #c14343;
+
 #intro {
   background: linear-gradient(
       rgba(0,0,0,0.4), 
@@ -33,7 +37,7 @@
     width: 30%;
     
     i {
-      display: block;
+      display: inline-block;
       font-size: 3rem;
     }
     
@@ -81,15 +85,50 @@
   #social {
     
     ul {
+      display: inline-block;
       list-style: none;
-      margin: 0;
+      margin: 0 0 2rem;
       padding: 0;
+      width: 70%;
+      vertical-align: top;
       
       li {
         display: inline-block;
-        margin: 0 3% 0 0;
+        margin: 0.75rem 2.5% 0 0;
         padding: 0;
         width: 30%;
+        
+        a {
+          display: block;
+          background: rgba(#000,0.8);
+          color: #FFF;
+          padding: 0.3rem;
+          text-align: center;
+        }
+        &.facebook a {
+          background: rgba($facebook, 0.8);
+          
+          &:hover {
+            background: rgba($facebook, 1);
+          }
+        }
+        &.twitter a {
+          background: rgba($twitter, 0.8);
+          
+          &:hover {
+            background: rgba($twitter, 1);
+          }
+        }
+        &.google a {
+          background: rgba($google, 0.8);
+          
+          &:hover {
+            background: rgba($google, 1);
+          }
+
+        }
+
+        
       }
     }
   }
@@ -165,7 +204,7 @@
       i {
         display: inline-block;
         width: 2rem;
-        margin: 0 1.5rem 0 3rem;
+        margin: 0 1.5rem;
       }
   
     }
