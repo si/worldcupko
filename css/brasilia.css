@@ -370,59 +370,79 @@
   #intro h2 {
     font-size: 1.3rem;
   }
-  /* line 197, ../sass/_partials/_intro.scss */
+  /* line 198, ../sass/_partials/_intro.scss */
   #intro #download,
   #intro #newsletter,
-  #intro #social {
+  #intro #social,
+  #intro #next {
     display: block;
     margin: 0;
     padding: 0;
     width: 100%;
     text-align: left;
   }
-  /* line 204, ../sass/_partials/_intro.scss */
+  /* line 205, ../sass/_partials/_intro.scss */
   #intro #download i,
   #intro #newsletter i,
-  #intro #social i {
+  #intro #social i,
+  #intro #next i {
     display: inline-block;
     width: 2rem;
     margin: 0 1.5rem;
   }
-  /* line 214, ../sass/_partials/_intro.scss */
+  /* line 215, ../sass/_partials/_intro.scss */
   #intro #download a {
     display: block;
     max-width: 100%;
   }
-  /* line 218, ../sass/_partials/_intro.scss */
+  /* line 219, ../sass/_partials/_intro.scss */
   #intro #download a span {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 229, ../sass/_partials/_intro.scss */
+  /* line 230, ../sass/_partials/_intro.scss */
   #intro #newsletter label {
     display: block;
     max-width: 100%;
   }
-  /* line 233, ../sass/_partials/_intro.scss */
+  /* line 234, ../sass/_partials/_intro.scss */
   #intro #newsletter label span {
     display: none;
   }
-  /* line 237, ../sass/_partials/_intro.scss */
+  /* line 238, ../sass/_partials/_intro.scss */
   #intro #newsletter label input, #intro #newsletter label button {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 248, ../sass/_partials/_intro.scss */
+  /* line 249, ../sass/_partials/_intro.scss */
   #intro #social span {
     display: none;
   }
+  /* line 257, ../sass/_partials/_intro.scss */
+  #intro #next p {
+    display: inline-block;
+    width: 70%;
+  }
+  /* line 261, ../sass/_partials/_intro.scss */
+  #intro #next p > span {
+    display: none;
+  }
+  /* line 267, ../sass/_partials/_intro.scss */
+  #intro #next p strong span {
+    width: 3rem;
+    font-size: 0.8rem;
+  }
+  /* line 271, ../sass/_partials/_intro.scss */
+  #intro #next p strong span em {
+    font-size: 2rem;
+  }
 }
 
-/* line 258, ../sass/_partials/_intro.scss */
+/* line 281, ../sass/_partials/_intro.scss */
 .ad {
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);

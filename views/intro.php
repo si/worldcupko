@@ -59,7 +59,7 @@
     <div id="next">
       <i class="icon" data-icon="&#xe083"></i>
       <p>
-        Next kick off  
+        <span>Next kick off</span>
         <strong title="<?php echo ($next->start); ?>">
           <?php echo $next->start; ?>
         </strong>

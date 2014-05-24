@@ -194,7 +194,8 @@ $google : #c14343;
 
     #download, 
     #newsletter, 
-    #social {
+    #social,
+    #next {
       display: block;
       margin: 0;
       padding: 0;
@@ -251,8 +252,30 @@ $google : #c14343;
 
     }
 
+    #next {
+      
+      p {
+        display: inline-block;
+        width: 70%;
+        
+        > span {
+          display: none;
+        }
+        
+        strong {
+        
+          span {
+            width: 3rem;
+            font-size: 0.8rem;
+            
+            em {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
   }
-
 }
 
 .ad {
