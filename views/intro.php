@@ -2,7 +2,7 @@
 
     <header>
       <h1><a href="/">World Cup 2014 Kick Off</a></h1>
-      <h2>Never miss a single World Cup kick off from Brazil</h2>
+      <h2>All the World Cup kick off times from Brazil to your device</h2>
     </header>
     
     <div class="actions">
