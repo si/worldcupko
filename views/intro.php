@@ -70,7 +70,15 @@
     <?php endif; ?>
     
     <div class="ad">
-      <a href="#">Your ad can go here</a>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           data-ad-client="ca-pub-2350797824472723"
+           data-ad-slot="9714592443"
+           data-ad-format="auto">
+      </ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
     
   </section>
