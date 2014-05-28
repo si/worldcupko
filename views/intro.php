@@ -2,7 +2,7 @@
 
     <header>
       <h1><a href="/">World Cup 2014 Kick Off</a></h1>
-      <h2>All the World Cup kick off times from Brazil to your device</h2>
+      <h2>All the World Cup kick off times, directly from Brazil to your device</h2>
     </header>
     
     <div class="actions">
@@ -58,13 +58,16 @@
   
     <div id="next">
       <i class="icon" data-icon="&#xe083"></i>
-      <p>
+      <p class="countdown">
         <span>Next kick off</span>
         <strong title="<?php echo ($next->start); ?>">
           <?php echo $next->start; ?>
         </strong>
       </p>
-      <p class="details"><?php echo $next->summary. ', ' . $next->location . ', Group ' . $next->group; ?></p>
+      <p class="details">
+        <strong><?php echo $next->summary; ?></strong>
+        <?php echo $next->location . ', Group ' . $next->group; ?>
+      </p>
     </div>
     
     <?php endif; ?>
