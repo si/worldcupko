@@ -3,7 +3,7 @@ $(document).ready(function(){
   /*
   Initiate Next Game Countdown
   */
-  var element = $('#next').find('strong'),
+  var element = $('#next .countdown').find('strong'),
       timestamp = element.attr('title'),
       kickoff;
 
