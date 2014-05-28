@@ -7,8 +7,11 @@
   <?php 
     foreach($json->events as $event) : 
       if( $date != date('l j F Y', strtotime($event->start)) ) :
+        
+        if( $date != '' ) echo '</div>';
         $date = date('l j F Y', strtotime($event->start));
       ?>
+      <div class="day">
       <h2 class="date" data-date="<?php echo date('j F Y', strtotime($event->start)); ?>">
         <a href="<?php echo url('date', date('j F Y', strtotime($event->start))); ?>"><?php echo $date; ?></a>
       </h2>

@@ -37,6 +37,7 @@ $(document).ready(function(){
     // Hide all, show filter
     $('.event, .date').hide();
     $(selector).slideDown('slow');
+    $(selector).closest('.day').children('.date').slideDown('slow');
   }
 
 });
