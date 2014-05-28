@@ -199,22 +199,29 @@
   /* iPhone 4 - 960 × 640 */
 }
 /* line 14, ../sass/_partials/_intro.scss */
+#intro h1, #intro h2 {
+  width: 25rem;
+  margin: 0 auto;
+}
+/* line 18, ../sass/_partials/_intro.scss */
 #intro h1 {
-  font-size: 3rem;
+  font-family: 'Ruge Boogie', cursive;
+  /*     font-family: 'Unkempt', cursive; */
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 0;
 }
-/* line 19, ../sass/_partials/_intro.scss */
+/* line 25, ../sass/_partials/_intro.scss */
 #intro h1 a {
   text-decoration: none;
 }
-/* line 23, ../sass/_partials/_intro.scss */
+/* line 29, ../sass/_partials/_intro.scss */
 #intro h2 {
   font-size: 1.6rem;
   font-weight: normal;
-  margin: 0 0 5rem;
+  margin: 0 auto 5rem;
 }
-/* line 31, ../sass/_partials/_intro.scss */
+/* line 37, ../sass/_partials/_intro.scss */
 #intro #download,
 #intro #newsletter,
 #intro #social {
@@ -225,47 +232,47 @@
   vertical-align: top;
   width: 30%;
 }
-/* line 39, ../sass/_partials/_intro.scss */
+/* line 45, ../sass/_partials/_intro.scss */
 #intro #download i,
 #intro #newsletter i,
 #intro #social i {
   display: inline-block;
   font-size: 3rem;
 }
-/* line 48, ../sass/_partials/_intro.scss */
+/* line 54, ../sass/_partials/_intro.scss */
 #intro #download a {
   display: inline-block;
   max-width: 11em;
   text-decoration: none;
 }
-/* line 53, ../sass/_partials/_intro.scss */
+/* line 59, ../sass/_partials/_intro.scss */
 #intro #download a small {
   display: block;
   font-size: 0.7em;
 }
-/* line 62, ../sass/_partials/_intro.scss */
+/* line 68, ../sass/_partials/_intro.scss */
 #intro #newsletter label {
   display: block;
 }
-/* line 66, ../sass/_partials/_intro.scss */
+/* line 72, ../sass/_partials/_intro.scss */
 #intro #newsletter input, #intro #newsletter button {
   border: none;
   display: inline-block;
   font-family: Avenir, Helvetica, sans-serif;
 }
-/* line 72, ../sass/_partials/_intro.scss */
+/* line 78, ../sass/_partials/_intro.scss */
 #intro #newsletter input {
   background: rgba(255, 255, 255, 0.8);
   color: rgba(0, 0, 0, 0.8);
   padding: 0.75em;
 }
-/* line 77, ../sass/_partials/_intro.scss */
+/* line 83, ../sass/_partials/_intro.scss */
 #intro #newsletter button {
   background: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 0.8);
   padding: 0.80em;
 }
-/* line 87, ../sass/_partials/_intro.scss */
+/* line 93, ../sass/_partials/_intro.scss */
 #intro #social ul {
   display: inline-block;
   list-style: none;
@@ -274,14 +281,14 @@
   width: 70%;
   vertical-align: top;
 }
-/* line 95, ../sass/_partials/_intro.scss */
+/* line 101, ../sass/_partials/_intro.scss */
 #intro #social ul li {
   display: inline-block;
   margin: 0.75rem 2.5% 0 0;
   padding: 0;
   width: 30%;
 }
-/* line 101, ../sass/_partials/_intro.scss */
+/* line 107, ../sass/_partials/_intro.scss */
 #intro #social ul li a {
   display: block;
   background: rgba(0, 0, 0, 0.8);
@@ -289,53 +296,53 @@
   padding: 0.3rem;
   text-align: center;
 }
-/* line 108, ../sass/_partials/_intro.scss */
+/* line 114, ../sass/_partials/_intro.scss */
 #intro #social ul li.facebook a {
   background: rgba(0, 101, 193, 0.8);
 }
-/* line 111, ../sass/_partials/_intro.scss */
+/* line 117, ../sass/_partials/_intro.scss */
 #intro #social ul li.facebook a:hover {
   background: #0065c1;
 }
-/* line 115, ../sass/_partials/_intro.scss */
+/* line 121, ../sass/_partials/_intro.scss */
 #intro #social ul li.twitter a {
   background: rgba(0, 159, 194, 0.8);
 }
-/* line 118, ../sass/_partials/_intro.scss */
+/* line 124, ../sass/_partials/_intro.scss */
 #intro #social ul li.twitter a:hover {
   background: #009fc2;
 }
-/* line 122, ../sass/_partials/_intro.scss */
+/* line 128, ../sass/_partials/_intro.scss */
 #intro #social ul li.google a {
   background: rgba(193, 67, 67, 0.8);
 }
-/* line 125, ../sass/_partials/_intro.scss */
+/* line 131, ../sass/_partials/_intro.scss */
 #intro #social ul li.google a:hover {
   background: #c14343;
 }
-/* line 136, ../sass/_partials/_intro.scss */
+/* line 142, ../sass/_partials/_intro.scss */
 #intro #next {
   clear: left;
   display: block;
   margin: 0 0 3rem;
 }
-/* line 141, ../sass/_partials/_intro.scss */
+/* line 147, ../sass/_partials/_intro.scss */
 #intro #next p {
   margin: 0;
   padding: 0;
 }
-/* line 147, ../sass/_partials/_intro.scss */
+/* line 153, ../sass/_partials/_intro.scss */
 #intro #next i,
 #intro #next strong {
   display: block;
   font-size: 3rem;
 }
-/* line 152, ../sass/_partials/_intro.scss */
+/* line 158, ../sass/_partials/_intro.scss */
 #intro #next strong {
   font-weight: normal;
   padding: 1rem 0 0;
 }
-/* line 157, ../sass/_partials/_intro.scss */
+/* line 163, ../sass/_partials/_intro.scss */
 #intro #next strong span {
   display: inline-block;
   font-size: 1rem;
@@ -344,13 +351,13 @@
   padding: 0;
   width: 4rem;
 }
-/* line 165, ../sass/_partials/_intro.scss */
+/* line 171, ../sass/_partials/_intro.scss */
 #intro #next strong span em {
   font-size: 3rem;
   font-style: normal;
   font-weight: bold;
 }
-/* line 174, ../sass/_partials/_intro.scss */
+/* line 180, ../sass/_partials/_intro.scss */
 #intro #next .details {
   font-size: 1.5rem;
   font-weight: bold;
@@ -358,19 +365,19 @@
   padding: 0;
 }
 @media only screen and (max-width: 900px) {
-  /* line 185, ../sass/_partials/_intro.scss */
+  /* line 191, ../sass/_partials/_intro.scss */
   #intro #intro {
     padding: 4rem 0;
   }
-  /* line 188, ../sass/_partials/_intro.scss */
+  /* line 194, ../sass/_partials/_intro.scss */
   #intro h1 {
     font-size: 2rem;
   }
-  /* line 191, ../sass/_partials/_intro.scss */
+  /* line 197, ../sass/_partials/_intro.scss */
   #intro h2 {
     font-size: 1.3rem;
   }
-  /* line 198, ../sass/_partials/_intro.scss */
+  /* line 204, ../sass/_partials/_intro.scss */
   #intro #download,
   #intro #newsletter,
   #intro #social,
@@ -381,7 +388,7 @@
     width: 100%;
     text-align: left;
   }
-  /* line 205, ../sass/_partials/_intro.scss */
+  /* line 211, ../sass/_partials/_intro.scss */
   #intro #download i,
   #intro #newsletter i,
   #intro #social i,
@@ -390,59 +397,68 @@
     width: 2rem;
     margin: 0 1.5rem;
   }
-  /* line 215, ../sass/_partials/_intro.scss */
+  /* line 221, ../sass/_partials/_intro.scss */
   #intro #download a {
     display: block;
     max-width: 100%;
   }
-  /* line 219, ../sass/_partials/_intro.scss */
+  /* line 225, ../sass/_partials/_intro.scss */
   #intro #download a span {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 230, ../sass/_partials/_intro.scss */
+  /* line 236, ../sass/_partials/_intro.scss */
   #intro #newsletter label {
     display: block;
     max-width: 100%;
   }
-  /* line 234, ../sass/_partials/_intro.scss */
+  /* line 240, ../sass/_partials/_intro.scss */
   #intro #newsletter label span {
     display: none;
   }
-  /* line 238, ../sass/_partials/_intro.scss */
+  /* line 244, ../sass/_partials/_intro.scss */
   #intro #newsletter label input, #intro #newsletter label button {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 249, ../sass/_partials/_intro.scss */
+  /* line 255, ../sass/_partials/_intro.scss */
   #intro #social span {
     display: none;
   }
-  /* line 257, ../sass/_partials/_intro.scss */
+  /* line 263, ../sass/_partials/_intro.scss */
   #intro #next p {
     display: inline-block;
     width: 70%;
   }
-  /* line 261, ../sass/_partials/_intro.scss */
+  /* line 267, ../sass/_partials/_intro.scss */
   #intro #next p > span {
     display: none;
   }
-  /* line 267, ../sass/_partials/_intro.scss */
+  /* line 273, ../sass/_partials/_intro.scss */
   #intro #next p strong span {
     width: 3rem;
     font-size: 0.8rem;
   }
-  /* line 271, ../sass/_partials/_intro.scss */
+  /* line 277, ../sass/_partials/_intro.scss */
   #intro #next p strong span em {
     font-size: 2rem;
   }
+  /* line 283, ../sass/_partials/_intro.scss */
+  #intro #next p.details {
+    margin-left: 20%;
+  }
+  /* line 286, ../sass/_partials/_intro.scss */
+  #intro #next p.details .span {
+    display: block;
+    font-size: 1.5rem;
+  }
 }
 
-/* line 281, ../sass/_partials/_intro.scss */
+/* line 296, ../sass/_partials/_intro.scss */
 .ad {
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);
