@@ -2,6 +2,15 @@ $facebook : #0065c1;
 $twitter : #009fc2;
 $google : #c14343;
 
+@-webkit-keyframes countdown {
+  0%   { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+@keyframes countdown {
+  0%   { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
 #intro {
   background: linear-gradient(
       rgba(0,0,0,0.4), 
@@ -172,6 +181,8 @@ $google : #c14343;
           font-size: 3rem;
           font-style: normal;
           font-weight: bold;
+          animation: countdown 1s infinite;
+          -webkit-animation: countdown 1s infinite;
         }
         
       }
