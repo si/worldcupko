@@ -15,7 +15,7 @@
       <?php
       endif;
       ?>
-      <div class="event <?php echo normalise($event->summary) . ' venue-' . normalise($event->location) . ' ' . ' date-' . normalise(date('j F Y', strtotime($event->start))) . ' ' . normalise(((strlen($event->group)==1) ? 'Group ' : '') . $event->group); ?>">
+      <div class="event <?php echo 'team-' . normalise($event->home_team->name) . ' team-' . normalise($event->away_team->name) . ' venue-' . normalise($event->location) . ' ' . ' date-' . normalise(date('j F Y', strtotime($event->start))) . ' ' . normalise(((strlen($event->group)==1) ? 'Group ' : '') . $event->group); ?>">
         <h3>
           <?php if($event->home_team->name!='') : ?>
             <a href="<?php echo url('team', $event->home_team->name); ?>" class="team <?php echo strtolower(str_replace(' ','-',$event->home_team->name)); ?>">
