@@ -64,8 +64,9 @@
     
     span {
       display: inline-block;
-      width: 25%;
       margin: 0;
+      max-width: 14rem;
+      width: 25%;
       
       &:first-child {
         text-align: left;
