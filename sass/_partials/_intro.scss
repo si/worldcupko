@@ -21,38 +21,41 @@ $google : #c14343;
   text-align: center;
 
   h1, h2 {
-    width: 25rem;
     margin: 0 auto;
   }
   h1 {
     font-family: 'Ruge Boogie', cursive;
-/*     font-family: 'Unkempt', cursive; */
     font-size: 4rem;
     font-weight: bold;
+    line-height: 0.9;
     margin-bottom: 0;
+    width: 26rem;
     
     a {
       text-decoration: none;
     }
   }
   h2 {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: normal;
-    margin: 0 auto 5rem;
+    margin: 4rem auto 5rem;
+    width: 30rem;
   }
 
   #download, 
   #newsletter, 
   #social {
+    background: rgba(#000,0.3);
     display: inline-block;
     margin: 0 0 3rem;
-    padding: 0;
+    height: 9rem;
+    padding: 1rem 0;
     transition: all 0.5s ease;
     vertical-align: top;
     width: 30%;
     
     i {
-      display: inline-block;
+      display: block;
       font-size: 3rem;
     }
     
@@ -68,6 +71,7 @@ $google : #c14343;
       small {
         display: block;
         font-size: 0.7em;
+        margin-top: 0.3rem;
       }
     }
   }
@@ -76,6 +80,11 @@ $google : #c14343;
     
     label {
       display: block;
+      
+      span {
+        display: block;
+        padding-bottom: 0.65rem;
+      }
     }
     
     input, button {
@@ -88,11 +97,19 @@ $google : #c14343;
       background: rgba(#FFF,0.8);
       color: rgba(#000,0.8);
       padding: 0.75em;
+      
+      &:focus, &:hover {
+        background: rgba(#FFF,1);
+      }
     }
     button {
       background: rgba(#000,0.8);
       color: rgba(#FFF,0.8);
       padding: 0.80em;
+
+      &:focus, &:hover {
+        background: rgba(#000,1);
+      }
     }
     
   }
@@ -154,8 +171,17 @@ $google : #c14343;
     margin: 0 0 3rem;
     
     p {
+      display: inline-block;
       margin: 0;
       padding: 0;
+      width: 49%;
+      
+      &:first-child {
+        text-align: right;
+      }
+      &:last-child {
+        text-align: left;
+      }
     }
 
     i,
@@ -206,7 +232,8 @@ $google : #c14343;
       font-size: 2rem;
     }
     h2 {
-      font-size: 1.3rem;
+      font-size: 1rem;
+      max-width: 90%;
     }
 
     #download, 
@@ -214,15 +241,16 @@ $google : #c14343;
     #social,
     #next {
       display: block;
+      height: auto;
       margin: 0;
-      padding: 0;
+      padding: 0.5rem 0 0;
       width: 100%;
       text-align: left;
       
       i {
         display: inline-block;
         width: 2rem;
-        margin: 0 1.5rem;
+        margin: 0 2rem 0 1.5rem;
       }
   
     }

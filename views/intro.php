@@ -59,7 +59,6 @@
     <div id="next">
       <i class="icon" data-icon="&#xe083"></i>
       <p class="countdown">
-        <span>Next kick off</span>
         <strong title="<?php echo ($next->start); ?>">
           <?php echo $next->start; ?>
         </strong>
