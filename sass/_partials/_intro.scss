@@ -318,33 +318,24 @@ $google : #c14343;
     #next {
       
       p {
-        display: inline-block;
-        width: 70%;
-        
-        > span {
-          display: none;
+        display: block;
+        float: none;
+
+        h2, &.countdown, &.details {
+          text-align: center;
+          width: auto;
         }
-        
-        strong {
-        
-          span {
-            width: 3rem;
-            font-size: 0.8rem;
-            
-            em {
-              font-size: 2rem;
-            }
-          }
-        }
-        
-        &.details {
-          margin-left: 20%;
+/*
+        span {
+          width: 3rem;
+          font-size: 0.8rem;
           
-          .span {
-            display: block;
-            font-size: 1.5rem;
+          strong {
+            font-size: 2rem;
           }
         }
+*/
+        
       }
     }
   }

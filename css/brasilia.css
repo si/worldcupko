@@ -501,34 +501,27 @@
   }
   /* line 320, ../sass/_partials/_intro.scss */
   #intro #next p {
-    display: inline-block;
-    width: 70%;
+    display: block;
+    float: none;
+    /*
+            span {
+              width: 3rem;
+              font-size: 0.8rem;
+              
+              strong {
+                font-size: 2rem;
+              }
+            }
+    */
   }
   /* line 324, ../sass/_partials/_intro.scss */
-  #intro #next p > span {
-    display: none;
-  }
-  /* line 330, ../sass/_partials/_intro.scss */
-  #intro #next p strong span {
-    width: 3rem;
-    font-size: 0.8rem;
-  }
-  /* line 334, ../sass/_partials/_intro.scss */
-  #intro #next p strong span em {
-    font-size: 2rem;
-  }
-  /* line 340, ../sass/_partials/_intro.scss */
-  #intro #next p.details {
-    margin-left: 20%;
-  }
-  /* line 343, ../sass/_partials/_intro.scss */
-  #intro #next p.details .span {
-    display: block;
-    font-size: 1.5rem;
+  #intro #next p h2, #intro #next p.countdown, #intro #next p.details {
+    text-align: center;
+    width: auto;
   }
 }
 
-/* line 353, ../sass/_partials/_intro.scss */
+/* line 344, ../sass/_partials/_intro.scss */
 .ad {
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);
