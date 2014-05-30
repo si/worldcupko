@@ -31,7 +31,7 @@ include('_includes/data.php');
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ruge+Boogie" type="text/css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto" type="text/css">
 
 	<link rel="stylesheet" href="/css/brasilia.css" />
 	<link rel="stylesheet" href="/css/icons.css" />

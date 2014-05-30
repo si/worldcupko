@@ -388,14 +388,14 @@
   text-transform: uppercase;
   width: auto;
 }
-/* line 197, ../sass/_partials/_intro.scss */
+/* line 198, ../sass/_partials/_intro.scss */
 #intro #next p {
   float: left;
   margin: 0;
   padding: 0;
   width: 48%;
 }
-/* line 203, ../sass/_partials/_intro.scss */
+/* line 204, ../sass/_partials/_intro.scss */
 #intro #next p span {
   display: inline-block;
   font-size: 1rem;
@@ -404,49 +404,49 @@
   padding: 0;
   width: 4.5rem;
 }
-/* line 212, ../sass/_partials/_intro.scss */
+/* line 213, ../sass/_partials/_intro.scss */
 #intro #next p strong {
   display: block;
   font-size: 3rem;
   padding: 1rem 0 0;
   vertical-align: top;
 }
-/* line 220, ../sass/_partials/_intro.scss */
+/* line 221, ../sass/_partials/_intro.scss */
 #intro #next .countdown {
   margin-right: 1%;
   text-align: right;
 }
-/* line 224, ../sass/_partials/_intro.scss */
+/* line 225, ../sass/_partials/_intro.scss */
 #intro #next .countdown strong {
   animation: countdown 1s infinite;
   -webkit-animation: countdown 1s infinite;
 }
-/* line 230, ../sass/_partials/_intro.scss */
+/* line 231, ../sass/_partials/_intro.scss */
 #intro #next .details {
   margin-left: 1%;
   text-align: left;
 }
-/* line 234, ../sass/_partials/_intro.scss */
+/* line 235, ../sass/_partials/_intro.scss */
 #intro #next .details span {
   display: block;
   line-height: 0.8;
   width: auto;
 }
 @media only screen and (max-width: 900px) {
-  /* line 246, ../sass/_partials/_intro.scss */
+  /* line 247, ../sass/_partials/_intro.scss */
   #intro #intro {
     padding: 4rem 0;
   }
-  /* line 249, ../sass/_partials/_intro.scss */
+  /* line 250, ../sass/_partials/_intro.scss */
   #intro h1 {
     font-size: 2rem;
   }
-  /* line 252, ../sass/_partials/_intro.scss */
+  /* line 253, ../sass/_partials/_intro.scss */
   #intro h2 {
     font-size: 1rem;
     max-width: 90%;
   }
-  /* line 260, ../sass/_partials/_intro.scss */
+  /* line 261, ../sass/_partials/_intro.scss */
   #intro #download,
   #intro #newsletter,
   #intro #social,
@@ -458,7 +458,7 @@
     width: 100%;
     text-align: left;
   }
-  /* line 268, ../sass/_partials/_intro.scss */
+  /* line 269, ../sass/_partials/_intro.scss */
   #intro #download i,
   #intro #newsletter i,
   #intro #social i,
@@ -467,39 +467,39 @@
     width: 2rem;
     margin: 0 2rem 0 1.5rem;
   }
-  /* line 278, ../sass/_partials/_intro.scss */
+  /* line 279, ../sass/_partials/_intro.scss */
   #intro #download a {
     display: block;
     max-width: 100%;
   }
-  /* line 282, ../sass/_partials/_intro.scss */
+  /* line 283, ../sass/_partials/_intro.scss */
   #intro #download a span {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 293, ../sass/_partials/_intro.scss */
+  /* line 294, ../sass/_partials/_intro.scss */
   #intro #newsletter label {
     display: block;
     max-width: 100%;
   }
-  /* line 297, ../sass/_partials/_intro.scss */
+  /* line 298, ../sass/_partials/_intro.scss */
   #intro #newsletter label span {
     display: none;
   }
-  /* line 301, ../sass/_partials/_intro.scss */
+  /* line 302, ../sass/_partials/_intro.scss */
   #intro #newsletter label input, #intro #newsletter label button {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 312, ../sass/_partials/_intro.scss */
+  /* line 313, ../sass/_partials/_intro.scss */
   #intro #social span {
     display: none;
   }
-  /* line 320, ../sass/_partials/_intro.scss */
+  /* line 321, ../sass/_partials/_intro.scss */
   #intro #next p {
     display: block;
     float: none;
@@ -514,14 +514,14 @@
             }
     */
   }
-  /* line 324, ../sass/_partials/_intro.scss */
+  /* line 325, ../sass/_partials/_intro.scss */
   #intro #next p h2, #intro #next p.countdown, #intro #next p.details {
     text-align: center;
     width: auto;
   }
 }
 
-/* line 344, ../sass/_partials/_intro.scss */
+/* line 345, ../sass/_partials/_intro.scss */
 .ad {
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);
@@ -671,7 +671,7 @@ footer a {
 body {
   background: #98c83d;
   color: white;
-  font-family: Avenir, Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
