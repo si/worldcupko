@@ -1,7 +1,7 @@
   <section id="intro">
 
     <header>
-      <h1><a href="/">World Cup 2014 Kick Off</a></h1>
+      <h1><a href="/"><img src="/img/world-cup-2014-kick-off.png" alt="World Cup 2014 Kick Off" width="200"></a></h1>
       <h2>All the World Cup kick off times, directly from Brazil to your device</h2>
     </header>
     
@@ -29,14 +29,14 @@
         <span>Share the love for football</span>
         <ul class="share">
           <li class="facebook">
-            <a href="http://www.facebook.com/worldcupkickoff" class="fb-like" data-href="http://www.worldcupkickoff.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true">Like</a>
+            <div class="fb-like" data-href="http://www.worldcupkickoff.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">Like</div>
           </li>
           <li class="twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.com/worldcupko" data-count="horizontal">Tweet</a>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.worldcupkickoff.com" data-count="horizontal">Tweet</a>
             <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
           </li>
           <li class="google">
-            <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>" class="g-plusone" data-size="medium" data-href="http://http://<?php echo $_SERVER['SERVER_NAME']; ?>">+1</a>
+            <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>" class="g-plusone" data-size="medium" data-href="http://www.worldcupkickoff.com">+1</a>
           </li>
         </ul>
         
@@ -57,15 +57,15 @@
     ?>
   
     <div id="next">
-      <i class="icon" data-icon="&#xe083"></i>
-      <p class="countdown">
-        <strong title="<?php echo ($next->start); ?>">
-          <?php echo $next->start; ?>
-        </strong>
+      <h2>Next up</h2>
+      <p class="countdown" title="<?php echo ($next->start); ?>">
+        <?php echo $next->start; ?>
       </p>
       <p class="details">
-        <strong><?php echo $next->summary; ?></strong>
-        <?php echo $next->location . ', Group ' . $next->group; ?>
+        <span>
+          <strong><?php echo $next->summary; ?></strong>
+          <?php echo $next->location . ', Group ' . $next->group; ?>
+        </span>
       </p>
     </div>
     
