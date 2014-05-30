@@ -15,13 +15,19 @@
         </a>
       </div>
 
-  		<form id="newsletter" action="http://unstyled.us5.list-manage.com/subscribe/post?u=72272c8bc5aca2779d7c6c61f&amp;id=d759ec2579" method="post" name="mc-embedded-subscribe-form" target="_blank">
+  		<form id="newsletter" action="http://worldcupkickoff.us8.list-manage.com/subscribe/post?u=bf6b27ef9d1cf4839476ae2eb&amp;id=b91f04a74d" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank">
   			<label for="mce-email">
     			<i class="icon" data-icon="&#xe038;"></i>
     			<span>Get fixtures by email daily</span>
-    			<input type="email"  name="EMAIL" id="mce-email" required placeholder="Your email address" />
-    			<button type="submit" name="subscribe">Subscribe</button>
+    			<input type="email"  name="EMAIL" id="mce-EMAIL" required class="required email" placeholder="Your email address" />
+    			<button id="mc-embedded-subscribe" type="submit" name="subscribe">Subscribe</button>
   			</label>
+      	<div id="mce-responses" class="clear">
+      		<div class="response" id="mce-error-response" style="display:none"></div>
+      		<div class="response" id="mce-success-response" style="display:none"></div>
+      	</div>
+      	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      	<div style="position: absolute; left: -5000px;"><input type="text" name="b_bf6b27ef9d1cf4839476ae2eb_b91f04a74d" tabindex="-1" value=""></div>
   		</form>
   		
   		<div id="social">
@@ -72,12 +78,12 @@
     <?php endif; ?>
     
     <div class="ad">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- WCKO Leader -->
       <ins class="adsbygoogle"
+           style="display:inline-block;width:728px;height:90px"
            data-ad-client="ca-pub-2350797824472723"
-           data-ad-slot="9714592443"
-           data-ad-format="auto">
-      </ins>
+           data-ad-slot="5284392843"></ins>
       <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
