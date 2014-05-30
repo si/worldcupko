@@ -198,7 +198,7 @@
 
   /* line 7, ../sass/_partials/_intro.scss */
   100% {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 
@@ -210,7 +210,7 @@
 
   /* line 11, ../sass/_partials/_intro.scss */
   100% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 
@@ -238,15 +238,20 @@
 /* line 34, ../sass/_partials/_intro.scss */
 #intro h1 a {
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-in;
 }
 /* line 38, ../sass/_partials/_intro.scss */
+#intro h1 a:hover {
+  opacity: 0.8;
+}
+/* line 44, ../sass/_partials/_intro.scss */
 #intro h2 {
   font-size: 1rem;
   font-weight: normal;
   margin: 4rem auto 5rem;
   width: 30rem;
 }
-/* line 47, ../sass/_partials/_intro.scss */
+/* line 53, ../sass/_partials/_intro.scss */
 #intro #download,
 #intro #newsletter,
 #intro #social {
@@ -259,179 +264,189 @@
   vertical-align: top;
   width: 30%;
 }
-/* line 57, ../sass/_partials/_intro.scss */
+/* line 63, ../sass/_partials/_intro.scss */
 #intro #download i,
 #intro #newsletter i,
 #intro #social i {
   display: block;
   font-size: 3rem;
 }
-/* line 66, ../sass/_partials/_intro.scss */
+/* line 72, ../sass/_partials/_intro.scss */
 #intro #download a {
   display: inline-block;
   max-width: 11em;
   text-decoration: none;
 }
-/* line 71, ../sass/_partials/_intro.scss */
+/* line 77, ../sass/_partials/_intro.scss */
 #intro #download a small {
   display: block;
   font-size: 0.7em;
   margin-top: 0.3rem;
 }
-/* line 81, ../sass/_partials/_intro.scss */
+/* line 87, ../sass/_partials/_intro.scss */
 #intro #newsletter label {
   display: block;
 }
-/* line 84, ../sass/_partials/_intro.scss */
+/* line 90, ../sass/_partials/_intro.scss */
 #intro #newsletter label span {
   display: block;
   padding-bottom: 0.65rem;
 }
-/* line 90, ../sass/_partials/_intro.scss */
+/* line 96, ../sass/_partials/_intro.scss */
 #intro #newsletter input, #intro #newsletter button {
   border: none;
   display: inline-block;
   font-family: Avenir, Helvetica, sans-serif;
 }
-/* line 96, ../sass/_partials/_intro.scss */
+/* line 102, ../sass/_partials/_intro.scss */
 #intro #newsletter input {
   background: rgba(255, 255, 255, 0.8);
   color: rgba(0, 0, 0, 0.8);
   padding: 0.75em;
 }
-/* line 101, ../sass/_partials/_intro.scss */
+/* line 107, ../sass/_partials/_intro.scss */
 #intro #newsletter input:focus, #intro #newsletter input:hover {
   background: white;
 }
-/* line 105, ../sass/_partials/_intro.scss */
+/* line 111, ../sass/_partials/_intro.scss */
 #intro #newsletter button {
   background: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 0.8);
   padding: 0.80em;
 }
-/* line 110, ../sass/_partials/_intro.scss */
+/* line 116, ../sass/_partials/_intro.scss */
 #intro #newsletter button:focus, #intro #newsletter button:hover {
   background: black;
 }
-/* line 119, ../sass/_partials/_intro.scss */
+/* line 125, ../sass/_partials/_intro.scss */
 #intro #social ul {
   display: inline-block;
   list-style: none;
   margin: 0 0 2rem;
   padding: 0;
-  width: 70%;
+  width: 90%;
   vertical-align: top;
 }
-/* line 127, ../sass/_partials/_intro.scss */
+/* line 133, ../sass/_partials/_intro.scss */
 #intro #social ul li {
   display: inline-block;
-  margin: 0.75rem 2.5% 0 0;
+  margin: 0.75rem 2% 0 0;
   padding: 0;
   width: 30%;
+  /*
+          &.facebook a {
+            background: rgba($facebook, 0.8);
+            
+            &:hover {
+              background: rgba($facebook, 1);
+            }
+          }
+          &.twitter a {
+            background: rgba($twitter, 0.8);
+            
+            &:hover {
+              background: rgba($twitter, 1);
+            }
+          }
+          &.google a {
+            background: rgba($google, 0.8);
+            
+            &:hover {
+              background: rgba($google, 1);
+            }
+  
+          }
+  */
 }
-/* line 133, ../sass/_partials/_intro.scss */
-#intro #social ul li a {
-  display: block;
-  background: rgba(0, 0, 0, 0.8);
-  color: #FFF;
-  padding: 0.3rem;
-  text-align: center;
-}
-/* line 140, ../sass/_partials/_intro.scss */
-#intro #social ul li.facebook a {
-  background: rgba(0, 101, 193, 0.8);
+/* line 139, ../sass/_partials/_intro.scss */
+#intro #social ul li:last-child {
+  margin-right: 0;
 }
 /* line 143, ../sass/_partials/_intro.scss */
-#intro #social ul li.facebook a:hover {
-  background: #0065c1;
+#intro #social ul li a {
+  display: inline-block;
+  /*
+            background: rgba(#000,0.8);
+            color: #FFF;
+            padding: 0.3rem;
+            text-align: center;
+  */
 }
-/* line 147, ../sass/_partials/_intro.scss */
-#intro #social ul li.twitter a {
-  background: rgba(0, 159, 194, 0.8);
-}
-/* line 150, ../sass/_partials/_intro.scss */
-#intro #social ul li.twitter a:hover {
-  background: #009fc2;
-}
-/* line 154, ../sass/_partials/_intro.scss */
-#intro #social ul li.google a {
-  background: rgba(193, 67, 67, 0.8);
-}
-/* line 157, ../sass/_partials/_intro.scss */
-#intro #social ul li.google a:hover {
-  background: #c14343;
-}
-/* line 168, ../sass/_partials/_intro.scss */
+/* line 182, ../sass/_partials/_intro.scss */
 #intro #next {
   clear: left;
   display: block;
   margin: 0 0 3rem;
-}
-/* line 173, ../sass/_partials/_intro.scss */
-#intro #next p {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  width: 49%;
-}
-/* line 179, ../sass/_partials/_intro.scss */
-#intro #next p:first-child {
-  text-align: right;
-}
-/* line 182, ../sass/_partials/_intro.scss */
-#intro #next p:last-child {
-  text-align: left;
+  overflow: hidden;
 }
 /* line 188, ../sass/_partials/_intro.scss */
-#intro #next i,
-#intro #next strong {
-  display: block;
-  font-size: 3rem;
+#intro #next h2 {
+  letter-spacing: 1rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: auto;
 }
-/* line 193, ../sass/_partials/_intro.scss */
-#intro #next strong {
-  font-weight: normal;
-  padding: 1rem 0 0;
+/* line 197, ../sass/_partials/_intro.scss */
+#intro #next p {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 48%;
 }
-/* line 198, ../sass/_partials/_intro.scss */
-#intro #next strong span {
+/* line 203, ../sass/_partials/_intro.scss */
+#intro #next p span {
   display: inline-block;
   font-size: 1rem;
   line-height: 0.8;
   margin: 0;
   padding: 0;
-  width: 4rem;
+  width: 4.5rem;
 }
-/* line 206, ../sass/_partials/_intro.scss */
-#intro #next strong span em {
+/* line 212, ../sass/_partials/_intro.scss */
+#intro #next p strong {
+  display: block;
   font-size: 3rem;
-  font-style: normal;
-  font-weight: bold;
+  padding: 1rem 0 0;
+  vertical-align: top;
+}
+/* line 220, ../sass/_partials/_intro.scss */
+#intro #next .countdown {
+  margin-right: 1%;
+  text-align: right;
+}
+/* line 224, ../sass/_partials/_intro.scss */
+#intro #next .countdown strong {
   animation: countdown 1s infinite;
   -webkit-animation: countdown 1s infinite;
 }
-/* line 217, ../sass/_partials/_intro.scss */
+/* line 230, ../sass/_partials/_intro.scss */
 #intro #next .details {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
+  margin-left: 1%;
+  text-align: left;
+}
+/* line 234, ../sass/_partials/_intro.scss */
+#intro #next .details span {
+  display: block;
+  line-height: 0.8;
+  width: auto;
 }
 @media only screen and (max-width: 900px) {
-  /* line 228, ../sass/_partials/_intro.scss */
+  /* line 246, ../sass/_partials/_intro.scss */
   #intro #intro {
     padding: 4rem 0;
   }
-  /* line 231, ../sass/_partials/_intro.scss */
+  /* line 249, ../sass/_partials/_intro.scss */
   #intro h1 {
     font-size: 2rem;
   }
-  /* line 234, ../sass/_partials/_intro.scss */
+  /* line 252, ../sass/_partials/_intro.scss */
   #intro h2 {
     font-size: 1rem;
     max-width: 90%;
   }
-  /* line 242, ../sass/_partials/_intro.scss */
+  /* line 260, ../sass/_partials/_intro.scss */
   #intro #download,
   #intro #newsletter,
   #intro #social,
@@ -443,7 +458,7 @@
     width: 100%;
     text-align: left;
   }
-  /* line 250, ../sass/_partials/_intro.scss */
+  /* line 268, ../sass/_partials/_intro.scss */
   #intro #download i,
   #intro #newsletter i,
   #intro #social i,
@@ -452,68 +467,68 @@
     width: 2rem;
     margin: 0 2rem 0 1.5rem;
   }
-  /* line 260, ../sass/_partials/_intro.scss */
+  /* line 278, ../sass/_partials/_intro.scss */
   #intro #download a {
     display: block;
     max-width: 100%;
   }
-  /* line 264, ../sass/_partials/_intro.scss */
+  /* line 282, ../sass/_partials/_intro.scss */
   #intro #download a span {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 275, ../sass/_partials/_intro.scss */
+  /* line 293, ../sass/_partials/_intro.scss */
   #intro #newsletter label {
     display: block;
     max-width: 100%;
   }
-  /* line 279, ../sass/_partials/_intro.scss */
+  /* line 297, ../sass/_partials/_intro.scss */
   #intro #newsletter label span {
     display: none;
   }
-  /* line 283, ../sass/_partials/_intro.scss */
+  /* line 301, ../sass/_partials/_intro.scss */
   #intro #newsletter label input, #intro #newsletter label button {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 294, ../sass/_partials/_intro.scss */
+  /* line 312, ../sass/_partials/_intro.scss */
   #intro #social span {
     display: none;
   }
-  /* line 302, ../sass/_partials/_intro.scss */
+  /* line 320, ../sass/_partials/_intro.scss */
   #intro #next p {
     display: inline-block;
     width: 70%;
   }
-  /* line 306, ../sass/_partials/_intro.scss */
+  /* line 324, ../sass/_partials/_intro.scss */
   #intro #next p > span {
     display: none;
   }
-  /* line 312, ../sass/_partials/_intro.scss */
+  /* line 330, ../sass/_partials/_intro.scss */
   #intro #next p strong span {
     width: 3rem;
     font-size: 0.8rem;
   }
-  /* line 316, ../sass/_partials/_intro.scss */
+  /* line 334, ../sass/_partials/_intro.scss */
   #intro #next p strong span em {
     font-size: 2rem;
   }
-  /* line 322, ../sass/_partials/_intro.scss */
+  /* line 340, ../sass/_partials/_intro.scss */
   #intro #next p.details {
     margin-left: 20%;
   }
-  /* line 325, ../sass/_partials/_intro.scss */
+  /* line 343, ../sass/_partials/_intro.scss */
   #intro #next p.details .span {
     display: block;
     font-size: 1.5rem;
   }
 }
 
-/* line 335, ../sass/_partials/_intro.scss */
+/* line 353, ../sass/_partials/_intro.scss */
 .ad {
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);

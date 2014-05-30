@@ -4,11 +4,11 @@ $google : #c14343;
 
 @-webkit-keyframes countdown {
   0%   { opacity: 1; }
-  100% { opacity: 0.8; }
+  100% { opacity: 0.7; }
 }
 @keyframes countdown {
   0%   { opacity: 1; }
-  100% { opacity: 0.5; }
+  100% { opacity: 0.7; }
 }
 
 #intro {
@@ -33,6 +33,12 @@ $google : #c14343;
     
     a {
       text-decoration: none;
+      -webkit-transition: all 0.3s ease-in;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+      
     }
   }
   h2 {
@@ -121,22 +127,29 @@ $google : #c14343;
       list-style: none;
       margin: 0 0 2rem;
       padding: 0;
-      width: 70%;
+      width: 90%;
       vertical-align: top;
       
       li {
         display: inline-block;
-        margin: 0.75rem 2.5% 0 0;
+        margin: 0.75rem 2% 0 0;
         padding: 0;
         width: 30%;
         
+        &:last-child {
+          margin-right: 0;
+        }
+        
         a {
-          display: block;
+          display: inline-block;
+/*
           background: rgba(#000,0.8);
           color: #FFF;
           padding: 0.3rem;
           text-align: center;
+*/
         }
+/*
         &.facebook a {
           background: rgba($facebook, 0.8);
           
@@ -159,6 +172,7 @@ $google : #c14343;
           }
 
         }
+*/
 
         
       }
@@ -169,31 +183,22 @@ $google : #c14343;
     clear: left;
     display: block;
     margin: 0 0 3rem;
+    overflow: hidden;
     
-    p {
-      display: inline-block;
+    h2 {
+      letter-spacing: 1rem;
       margin: 0;
       padding: 0;
-      width: 49%;
-      
-      &:first-child {
-        text-align: right;
-      }
-      &:last-child {
-        text-align: left;
-      }
-    }
-
-    i,
-    strong {
-      display: block;
-      font-size: 3rem;
+      text-align: center;
+      text-transform: uppercase;
+      width: auto;
     }
     
-    strong {
-
-      font-weight: normal;
-      padding: 1rem 0 0;
+    p {
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 48%;
       
       span {
         display: inline-block;
@@ -201,24 +206,37 @@ $google : #c14343;
         line-height: 0.8;
         margin: 0;
         padding: 0;
-        width: 4rem;
+        width: 4.5rem;
         
-        em {
-          font-size: 3rem;
-          font-style: normal;
-          font-weight: bold;
-          animation: countdown 1s infinite;
-          -webkit-animation: countdown 1s infinite;
-        }
-        
+      }      
+      strong {
+        display: block;
+        font-size: 3rem;
+        padding: 1rem 0 0;
+        vertical-align: top;
       }
     }
     
-    .details {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 0;
-      padding: 0;
+    .countdown {
+      margin-right: 1%;
+      text-align: right;
+
+      strong {
+                animation: countdown 1s infinite;
+        -webkit-animation: countdown 1s infinite;
+      }
+    }
+
+    .details {      
+      margin-left: 1%;
+      text-align: left;
+      
+      span {
+        display: block;
+        line-height: 0.8;
+        width: auto;
+      }
+      
     }
   }
 
