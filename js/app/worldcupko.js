@@ -3,7 +3,7 @@ $(document).ready(function(){
   /*
   Initiate Next Game Countdown
   */
-  var element = $('#next .countdown').find('strong'),
+  var element = $('#next .countdown'),
       timestamp = element.attr('title'),
       kickoff;
 
@@ -13,10 +13,10 @@ $(document).ready(function(){
     kickoff, 
     function(event) {
       $(this).html(event.strftime(
-        '<span><em>%D</em> days</span> '
-        + '<span><em>%H</em> hours</span> '
-        + '<span><em>%M</em> minutes</span> '
-        + '<span><em>%S</em> seconds</span> '
+        '<span><strong>%D</strong> days</span> '
+        + '<span><strong>%H</strong> hours</span> '
+        + '<span><strong>%M</strong> minutes</span> '
+        + '<span><strong>%S</strong> seconds</span> '
       ));
     }
   );
