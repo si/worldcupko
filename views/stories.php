@@ -4,6 +4,7 @@
   <?php var_dump($_SERVER); ?>
   </code>
 <?php else: ?>
+
   <?php 
     foreach($json->events as $event) : 
       if( $date != date('l j F Y', strtotime($event->start)) ) :
@@ -45,7 +46,7 @@
           </span>
         </p>
         <div class="actions">
-          <a href="<?php echo $event->ics_url; ?>">Add to calendar</a>
+          <a href="<?php echo str_replace('http://','webcal://',$event->ics_url); ?>">Add to calendar</a>
           <a href="<?php echo url('event',$event->summary); ?>">Tell your friends</a>
         </div>
       </div>

@@ -8,7 +8,7 @@
     <div class="actions">
     
       <div id="download">
-        <a href="<?php echo (isset($json->calendar->ics_url)) ? $json->calendar->ics_url : ''; ?>">
+        <a href="<?php echo (isset($json->calendar->ics_url)) ? str_replace('http://','webcal://',$json->calendar->ics_url) : ''; ?>">
           <i class="icon" data-icon="&#xe082;"></i>
           <span>Download kick off times to your calendar
           <small>for Windows, Mac or mobile</small></span>
