@@ -29,6 +29,8 @@
       	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       	<div style="position: absolute; left: -5000px;"><input type="text" name="b_bf6b27ef9d1cf4839476ae2eb_b91f04a74d" tabindex="-1" value=""></div>
   		</form>
+
+
   		
   		<div id="social">
         <i class="icon" data-icon="&#xe02a;"></i>
@@ -78,15 +80,24 @@
     <?php endif; ?>
     
     <div class="ad">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <!-- WCKO Leader -->
-      <ins class="adsbygoogle"
-           style="display:inline-block;width:728px;height:90px"
+      <ins class="adsbygoogle leaderboard"
+           style="width:728px;height:90px"
            data-ad-client="ca-pub-2350797824472723"
            data-ad-slot="5284392843"></ins>
+
+      <!-- WCKO Mobile Large -->
+      <ins class="adsbygoogle mobile"
+         style="width:320px;height:50px"
+         data-ad-client="ca-pub-2350797824472723"
+         data-ad-slot="9929428444"></ins>
+
       <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+
+      <a href="mailto:updates@worldcupkickoff.com">Email us to get your brand in front of thousands of global football fans</a></ins>
     </div>
     
   </section>
