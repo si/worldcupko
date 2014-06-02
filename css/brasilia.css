@@ -601,7 +601,7 @@
 }
 /* line 48, ../sass/_partials/_stories.scss */
 .event h3 .no-teams {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
   display: inline-block;
   margin: 0;
   padding: 5rem 0;
