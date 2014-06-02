@@ -41,6 +41,18 @@
       &:hover, &:focus {
         color: inherit;
       }
+
+    }
+
+
+    .no-teams {
+      background: rgba(#FFF,0.8);
+      display: inline-block;
+      margin: 0;
+      padding: 5rem 0;
+      text-align: center;
+      text-decoration: none;
+      width: 100%;
     }
     
     .vs {

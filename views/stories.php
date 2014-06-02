@@ -27,7 +27,7 @@
               <?php echo $event->away_team->name; ?>
             </a>
           <?php else: ?>
-            <?php echo $event->summary; ?>
+            <span class="no-teams"><?php echo $event->summary; ?></span>
           <?php endif; ?>
         </h3>
         <p class="detail">
