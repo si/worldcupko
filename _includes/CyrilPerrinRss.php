@@ -1,14 +1,12 @@
 <?php
 
-namespace CyrilPerrin\Rss;
-
 /**
  * Class to build RSS flux
  * @author Cyril Perrin
  * @license LGPL v3
  * @version 2013-10-14
  */
-class Rss
+class CyrilPerrinRss
 {
     /** @var \DOMDocument document */
     private $_document;

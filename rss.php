@@ -10,7 +10,7 @@ require('_includes/data.php');
 header('content-type:application/rss+xml');
 
 // Example
-$rss = new CyrilPerrin\Rss\Rss(
+$rss = new CyrilPerrinRss(
     'World Cup 2014 Kick Off', 'http://www.worldcupkickoff.com', 'All the World Cup 2014 kick off times, direct from Brazil to your device', 'en', '120', time()
 );
 $rss->setImage('World Cup 2014 Kick Off', 'img/world-cup-2014-kick-off.png', 'http://www.worldcupkickoff.com/');
