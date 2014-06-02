@@ -372,14 +372,18 @@
             text-align: center;
   */
 }
-/* line 182, ../sass/_partials/_intro.scss */
+/* line 153, ../sass/_partials/_intro.scss */
+#intro #social ul li.facebook div {
+  margin-top: -10px;
+}
+/* line 186, ../sass/_partials/_intro.scss */
 #intro #next {
   clear: left;
   display: block;
   margin: 0 0 3rem;
   overflow: hidden;
 }
-/* line 188, ../sass/_partials/_intro.scss */
+/* line 192, ../sass/_partials/_intro.scss */
 #intro #next h2 {
   letter-spacing: 1rem;
   margin: 0;
@@ -388,14 +392,14 @@
   text-transform: uppercase;
   width: auto;
 }
-/* line 198, ../sass/_partials/_intro.scss */
+/* line 202, ../sass/_partials/_intro.scss */
 #intro #next p {
   float: left;
   margin: 0;
   padding: 0;
   width: 48%;
 }
-/* line 204, ../sass/_partials/_intro.scss */
+/* line 208, ../sass/_partials/_intro.scss */
 #intro #next p span {
   display: inline-block;
   font-size: 1rem;
@@ -404,49 +408,56 @@
   padding: 0;
   width: 4.5rem;
 }
-/* line 213, ../sass/_partials/_intro.scss */
+/* line 217, ../sass/_partials/_intro.scss */
 #intro #next p strong {
   display: block;
   font-size: 3rem;
   padding: 1rem 0 0;
   vertical-align: top;
 }
-/* line 221, ../sass/_partials/_intro.scss */
+/* line 225, ../sass/_partials/_intro.scss */
 #intro #next .countdown {
   margin-right: 1%;
   text-align: right;
 }
-/* line 225, ../sass/_partials/_intro.scss */
+/* line 229, ../sass/_partials/_intro.scss */
 #intro #next .countdown strong {
   animation: countdown 1s infinite;
   -webkit-animation: countdown 1s infinite;
 }
-/* line 231, ../sass/_partials/_intro.scss */
+/* line 235, ../sass/_partials/_intro.scss */
 #intro #next .details {
   margin-left: 1%;
   text-align: left;
 }
-/* line 235, ../sass/_partials/_intro.scss */
+/* line 239, ../sass/_partials/_intro.scss */
 #intro #next .details span {
   display: block;
   line-height: 0.8;
   width: auto;
 }
+/* line 249, ../sass/_partials/_intro.scss */
+#intro .info {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}
 @media only screen and (max-width: 900px) {
-  /* line 247, ../sass/_partials/_intro.scss */
+  /* line 260, ../sass/_partials/_intro.scss */
   #intro #intro {
     padding: 4rem 0;
   }
-  /* line 250, ../sass/_partials/_intro.scss */
+  /* line 263, ../sass/_partials/_intro.scss */
   #intro h1 {
     font-size: 2rem;
   }
-  /* line 253, ../sass/_partials/_intro.scss */
+  /* line 266, ../sass/_partials/_intro.scss */
   #intro h2 {
     font-size: 1rem;
     max-width: 90%;
   }
-  /* line 261, ../sass/_partials/_intro.scss */
+  /* line 274, ../sass/_partials/_intro.scss */
   #intro #download,
   #intro #newsletter,
   #intro #social,
@@ -458,7 +469,7 @@
     width: 100%;
     text-align: left;
   }
-  /* line 269, ../sass/_partials/_intro.scss */
+  /* line 282, ../sass/_partials/_intro.scss */
   #intro #download i,
   #intro #newsletter i,
   #intro #social i,
@@ -467,39 +478,43 @@
     width: 2rem;
     margin: 0 2rem 0 1.5rem;
   }
-  /* line 279, ../sass/_partials/_intro.scss */
+  /* line 292, ../sass/_partials/_intro.scss */
   #intro #download a {
     display: block;
     max-width: 100%;
   }
-  /* line 283, ../sass/_partials/_intro.scss */
+  /* line 296, ../sass/_partials/_intro.scss */
   #intro #download a span {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 294, ../sass/_partials/_intro.scss */
+  /* line 307, ../sass/_partials/_intro.scss */
   #intro #newsletter label {
     display: block;
     max-width: 100%;
   }
-  /* line 298, ../sass/_partials/_intro.scss */
+  /* line 311, ../sass/_partials/_intro.scss */
   #intro #newsletter label span {
     display: none;
   }
-  /* line 302, ../sass/_partials/_intro.scss */
+  /* line 315, ../sass/_partials/_intro.scss */
   #intro #newsletter label input, #intro #newsletter label button {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 313, ../sass/_partials/_intro.scss */
+  /* line 324, ../sass/_partials/_intro.scss */
+  #intro #social {
+    display: none;
+  }
+  /* line 328, ../sass/_partials/_intro.scss */
   #intro #social span {
     display: none;
   }
-  /* line 321, ../sass/_partials/_intro.scss */
+  /* line 336, ../sass/_partials/_intro.scss */
   #intro #next p {
     display: block;
     float: none;
@@ -514,14 +529,14 @@
             }
     */
   }
-  /* line 325, ../sass/_partials/_intro.scss */
+  /* line 340, ../sass/_partials/_intro.scss */
   #intro #next p h2, #intro #next p.countdown, #intro #next p.details {
     text-align: center;
     width: auto;
   }
 }
 
-/* line 345, ../sass/_partials/_intro.scss */
+/* line 360, ../sass/_partials/_intro.scss */
 .ad {
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);
@@ -531,22 +546,22 @@
   text-align: center;
   /* iPhone 4 - 960 × 640 */
 }
-/* line 353, ../sass/_partials/_intro.scss */
+/* line 368, ../sass/_partials/_intro.scss */
 .ad .mobile {
   display: none;
 }
-/* line 357, ../sass/_partials/_intro.scss */
+/* line 372, ../sass/_partials/_intro.scss */
 .ad a {
   color: #999;
   display: block;
   padding: 1rem 0 0;
 }
 @media only screen and (max-width: 900px) {
-  /* line 365, ../sass/_partials/_intro.scss */
+  /* line 380, ../sass/_partials/_intro.scss */
   .ad .leaderboard {
     display: none;
   }
-  /* line 368, ../sass/_partials/_intro.scss */
+  /* line 383, ../sass/_partials/_intro.scss */
   .ad .mobile {
     display: block;
   }
@@ -691,12 +706,38 @@ footer {
   background: rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.5);
   font-size: 0.8em;
-  padding: 5rem;
+  padding: 5rem 0;
   text-align: center;
+  /* iPhone 4 - 960 × 640 */
 }
 /* line 13, ../sass/_partials/_footer.scss */
 footer a {
   color: rgba(0, 0, 0, 0.7);
+}
+/* line 17, ../sass/_partials/_footer.scss */
+footer .partners, footer .credits {
+  display: inline-block;
+  width: 45.5%;
+  margin: 0 1% 0 3%;
+  vertical-align: top;
+}
+/* line 23, ../sass/_partials/_footer.scss */
+footer .partners {
+  text-align: right;
+}
+/* line 27, ../sass/_partials/_footer.scss */
+footer .credits {
+  margin: 0 3% 0 1%;
+  text-align: left;
+}
+@media only screen and (max-width: 900px) {
+  /* line 34, ../sass/_partials/_footer.scss */
+  footer .partners, footer .credits {
+    display: block;
+    width: 95%;
+    margin: 0 2.5% 2rem;
+    text-align: center;
+  }
 }
 
 /* line 10, ../sass/brasilia.scss */

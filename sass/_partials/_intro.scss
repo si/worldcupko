@@ -149,6 +149,10 @@ $google : #c14343;
           text-align: center;
 */
         }
+        
+        &.facebook div {
+          margin-top: -10px;
+        }
 /*
         &.facebook a {
           background: rgba($facebook, 0.8);
@@ -240,6 +244,15 @@ $google : #c14343;
       
     }
   }
+  
+  
+  .info {
+    color: rgba(#FFF,0.7);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
 
   /* iPhone 4 - 960 × 640 */
   @media only screen and (max-width: 900px) {
@@ -309,6 +322,8 @@ $google : #c14343;
     }
 
     #social {
+    
+      display: none;
       
       span {
         display: none;
