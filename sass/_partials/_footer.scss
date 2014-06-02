@@ -7,10 +7,36 @@ footer {
   background: rgba($color-footer-background, 0.1);
   color: rgba($color-footer-text, $opacity-footer-text);
   font-size: 0.8em;
-  padding: 5rem;
+  padding: 5rem 0;
   text-align: center;
   
   a {
     color: rgba($color-footer-text, $opacity-footer-link);
   }
+  
+  .partners, .credits {
+    display: inline-block;
+    width: 45.5%;
+    margin: 0 1% 0 3%;
+    vertical-align: top;
+  }
+  .partners {
+    text-align: right;
+
+  }
+  .credits {
+    margin: 0 3% 0 1%;
+    text-align: left;
+  }
+  
+  /* iPhone 4 - 960 × 640 */
+  @media only screen and (max-width: 900px) {
+    .partners, .credits {
+      display: block;
+      width: 95%;
+      margin: 0 2.5% 2rem;
+      text-align: center;
+    }
+
+  }  
 }

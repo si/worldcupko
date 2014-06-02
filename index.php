@@ -49,24 +49,18 @@ include('_includes/data.php');
 
   <?php include('views/intro.php'); ?>
   <?php include('views/stories.php'); ?>
-  
-  
-  <footer>
-    
-    <p>Another <a href="http://kickoffcalendars.com/">KickOff Calendar</a> by <a href="http://twitter.com/Si">Si</a></p>
-    <p>World Cup 2014 is managed by FIFA. All data is republished in openly available data formats. Source control by Github</p>
-  
-  </footer>
+  <?php include('views/footer.php'); ?>
   
 
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-    ga('create', 'UA-91583-7', 'worldcupkickoff.com');
-    ga('send', 'pageview');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91583-7', 'worldcupkickoff.com');
+  ga('send', 'pageview');
+
   </script>
   
   <script src="/js/libs/jquery-2.0.3.min.js"></script>
