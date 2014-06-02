@@ -80,19 +80,14 @@
     <?php endif; ?>
     
     <div class="ad">
+
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- WCKO Leader -->
-      <ins class="adsbygoogle leaderboard"
-           style="width:728px;height:90px"
+      <!-- WCKO Main -->
+      <ins class="adsbygoogle"
+           style="display:block"
            data-ad-client="ca-pub-2350797824472723"
-           data-ad-slot="5284392843"></ins>
-
-      <!-- WCKO Mobile Large -->
-      <ins class="adsbygoogle mobile"
-         style="width:320px;height:50px"
-         data-ad-client="ca-pub-2350797824472723"
-         data-ad-slot="9929428444"></ins>
-
+           data-ad-slot="9714592443"
+           data-ad-format="horizontal"></ins>
       <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
       </script>

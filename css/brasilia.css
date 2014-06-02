@@ -526,7 +526,7 @@
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.8rem;
-  margin: 1rem;
+  margin: 3rem auto 1rem;
   padding: 1rem;
   text-align: center;
   /* iPhone 4 - 960 × 640 */
@@ -537,15 +537,16 @@
 }
 /* line 357, ../sass/_partials/_intro.scss */
 .ad a {
+  color: #999;
   display: block;
   padding: 1rem 0 0;
 }
 @media only screen and (max-width: 900px) {
-  /* line 364, ../sass/_partials/_intro.scss */
+  /* line 365, ../sass/_partials/_intro.scss */
   .ad .leaderboard {
     display: none;
   }
-  /* line 367, ../sass/_partials/_intro.scss */
+  /* line 368, ../sass/_partials/_intro.scss */
   .ad .mobile {
     display: block;
   }
