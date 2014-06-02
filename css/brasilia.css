@@ -739,13 +739,26 @@ footer .partners, footer .credits {
 footer .partners {
   text-align: right;
 }
-/* line 27, ../sass/_partials/_footer.scss */
+/* line 26, ../sass/_partials/_footer.scss */
+footer .partners img {
+  width: 125px;
+  height: 125px;
+  padding: 4px;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+/* line 33, ../sass/_partials/_footer.scss */
+footer .partners img:hover {
+  opacity: 0.9;
+  background: rgba(0, 0, 0, 0.2);
+}
+/* line 40, ../sass/_partials/_footer.scss */
 footer .credits {
   margin: 0 3% 0 1%;
   text-align: left;
 }
 @media only screen and (max-width: 900px) {
-  /* line 34, ../sass/_partials/_footer.scss */
+  /* line 47, ../sass/_partials/_footer.scss */
   footer .partners, footer .credits {
     display: block;
     width: 95%;

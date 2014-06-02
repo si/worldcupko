@@ -22,6 +22,19 @@ footer {
   }
   .partners {
     text-align: right;
+    
+    img {
+      width: 125px;
+      height: 125px;
+      padding: 4px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      
+      &:hover {
+        opacity: 0.9;
+        background: rgba(#000,0.2);
+      }
+    }
 
   }
   .credits {
