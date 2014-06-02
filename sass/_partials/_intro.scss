@@ -31,6 +31,11 @@ $google : #c14343;
     margin-bottom: 0;
     width: 26rem;
     
+    /* iPhone 4 - 960 × 640 */
+    @media only screen and (max-width: 900px) {
+      width: 20rem;
+    }
+
     a {
       text-decoration: none;
       -webkit-transition: all 0.3s ease-in;
@@ -46,6 +51,10 @@ $google : #c14343;
     font-weight: normal;
     margin: 4rem auto 5rem;
     width: 30rem;
+
+    @media only screen and (max-width: 900px) {
+      width: 18rem;
+    }
   }
 
   #download, 
@@ -186,7 +195,7 @@ $google : #c14343;
   #next {
     clear: left;
     display: block;
-    margin: 0 0 3rem;
+    margin: 2rem 0 3rem;
     overflow: hidden;
     
     h2 {
@@ -194,6 +203,7 @@ $google : #c14343;
       margin: 0;
       padding: 0;
       text-align: center;
+      text-indent: 1rem;
       text-transform: uppercase;
       width: auto;
       
@@ -296,7 +306,7 @@ $google : #c14343;
         span {
           display: inline-block;
           margin: 0.45rem 0;
-          width: auto;
+          width: 11rem;
           vertical-align: top;
         }
       }
@@ -337,7 +347,9 @@ $google : #c14343;
         display: block;
         float: none;
 
-        h2, &.countdown, &.details {
+        h2, 
+        &.countdown, 
+        &.details {
           text-align: center;
           width: auto;
         }
