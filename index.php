@@ -17,7 +17,10 @@ include('_includes/data.php');
 	<meta name="author" content="humans.txt">
 
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-
+	
+  <link rel="alternate" type="application/rss+xml" href="/rss.php" title="RSS 2.0">
+  <link rel="alternate" type="application/atom+xml" href="/rss.php" title="Atom 1.0">
+    
 	<!-- Facebook Metadata /-->
 	<meta property="fb:page_id" content="" />
 	<meta property="og:image" content="" />
