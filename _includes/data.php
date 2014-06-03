@@ -1,5 +1,5 @@
 <?php
-$endpoint = 'http://dev.kickoffcalendars.com/calendars/view/5.json';
+$endpoint = 'http://alpha.kickoffcalendars.com/calendars/view/5.json';
 
 // create a new cURL resource
 $ch = curl_init();
