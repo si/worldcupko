@@ -15,7 +15,7 @@ header('content-type:application/rss+xml; charset=UTF-8');
 
 $xml = new SimpleXMLElement('<rss/>');
 $xml->addAttribute("version", "2.0");
-$xml->addAttribute('xmlns:atom', "http://www.w3.org/2005/Atom");
+$xml->addAttribute('xmlns:xmlns:atom', "http://www.w3.org/2005/Atom");
 
 $channel = $xml->addChild("channel");
  
@@ -26,7 +26,7 @@ $channel->addChild("language", "en-GB");
 $channel->addChild('ttl','120');
 $channel->addChild('lastBuildDate', date('r', time()));
 
-$atom_link = $channel->addChild('atom:link');
+$atom_link = $channel->addChild('atom:atom:link');
 $atom_link->addAttribute('rel', 'self');
 $atom_link->addAttribute('type', 'application/rss+xml');
 $atom_link->addAttribute('href', $feed_url);
