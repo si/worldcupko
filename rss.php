@@ -9,6 +9,7 @@ $base_url = 'http://' . $_SERVER['SERVER_NAME'];
 $feed_url = $base_url . '/rss.php';
 
 $before = (isset($_GET['before'])) ? $_GET['before'] : 'tomorrow';
+$team = (isset($_GET['team'])) ? $_GET['team'] : '';
 
 // HTTP header
 header('content-type:application/rss+xml; charset=UTF-8');
@@ -37,15 +38,18 @@ $atom_link->addAttribute('href', $feed_url);
 foreach($json->events as $event) : 
 
   if(strtotime($event->start) < strtotime($before)) { 
+  
+    if($team=='' || (strtolower($event->home_team->name) == $team || strtolower($event->away_team->name) == $team)) {
 
-    $item = $channel->addChild("item");
-    $item->addChild("guid", $base_url . url('event',$event->summary));
-    $item->addChild("title", $event->summary);
-    $item->addChild("link", $base_url . url('event',$event->summary));
-    $item->addChild("description",  date('ga', strtotime($event->start)) . ', ' . $event->location . ', ' . ((strlen($event->group)==1) ? 'Group ' : '') . $event->group);
-    $item->addChild("pubDate", date('r', strtotime($event->start)));
-    $item->addChild('category', ((strlen($event->group)==1) ? 'Group ' : '') . $event->group);
+      $item = $channel->addChild("item");
+      $item->addChild("guid", $base_url . url('event',$event->summary));
+      $item->addChild("title", $event->summary);
+      $item->addChild("link", $base_url . url('event',$event->summary));
+      $item->addChild("description",  'Kick off at <span class="time">' . date('ga', strtotime($event->start)) . '</span>, <span class="location">' . $event->location . '</span>, <span class="group">' . ((strlen($event->group)==1) ? 'Group ' : '') . $event->group) . '</span>';
+      $item->addChild("pubDate", date('r', strtotime($event->start)));
+      $item->addChild('category', ((strlen($event->group)==1) ? 'Group ' : '') . $event->group);
 
+    }
   }
   
 endforeach;
