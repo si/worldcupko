@@ -46,9 +46,9 @@ foreach($json->events as $event) :
   
     // Filter by team if defined
     if(
-      ($team=='' && $group=='')
-      || (strtolower($event->home_team->name) == $team || strtolower($event->away_team->name) == $team)
-      || (strtolower($event->group) == $group)
+      ( $team=='' && $group=='' )
+      || ( strtolower($event->home_team->name) == strtolower($team) || strtolower($event->away_team->name) == strtolower($team) )
+      || ( strtolower($event->group) == strtolower($group) )
     ) {
 
       $item = $channel->addChild("item");
