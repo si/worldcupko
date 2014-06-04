@@ -5,21 +5,25 @@ date_default_timezone_set('UTC');
 require('_includes/global.php');
 require('_includes/data.php');
 
+// Set some constants
 $base_url = 'http://' . $_SERVER['SERVER_NAME'];
 $feed_url = $base_url . '/rss.php';
 
+// Check for URL parameters
 $before = (isset($_GET['before'])) ? $_GET['before'] : 'tomorrow';
 $team = (isset($_GET['team'])) ? $_GET['team'] : '';
+$group = (isset($_GET['group'])) ? $_GET['group'] : '';
 
 // HTTP header
 header('content-type:application/rss+xml; charset=UTF-8');
 
+// Create RSS root node
 $xml = new SimpleXMLElement('<rss/>');
 $xml->addAttribute("version", "2.0");
 $xml->addAttribute('xmlns:xmlns:atom', "http://www.w3.org/2005/Atom");
 
+// Create RSS CHANNEL node
 $channel = $xml->addChild("channel");
- 
 $channel->addChild("title", 'World Cup 2014 Kick Off');
 $channel->addChild("link", 'http://www.worldcupkickoff.com');
 $channel->addChild("description", 'All the World Cup 2014 kick off times, direct from Brazil to your device');
@@ -34,12 +38,18 @@ $atom_link->addAttribute('href', $feed_url);
 
 // $rss->setImage('World Cup 2014 Kick Off', 'img/world-cup-2014-kick-off.png', 'http://www.worldcupkickoff.com/');
 
-
+// Loop through events for each ITEM
 foreach($json->events as $event) : 
 
+  // Check if the event happens within the Before parameter
   if(strtotime($event->start) < strtotime($before)) { 
   
-    if($team=='' || (strtolower($event->home_team->name) == $team || strtolower($event->away_team->name) == $team)) {
+    // Filter by team if defined
+    if(
+      ($team=='' && $group=='')
+      || (strtolower($event->home_team->name) == $team || strtolower($event->away_team->name) == $team)
+      || (strtolower($event->group) == $group)
+    ) {
 
       $item = $channel->addChild("item");
       $item->addChild("guid", $base_url . url('event',$event->summary));
