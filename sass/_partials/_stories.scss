@@ -33,7 +33,7 @@
     .team {
       display: inline-block;
       margin: 0;
-      padding: 5rem 0;
+      padding: 4rem 0 6rem;
       text-align: center;
       text-decoration: none;
       width: 50%;
@@ -62,41 +62,70 @@
   }
   
   .detail {
+    background: rgba(#000, 0.2);
     font-size: 0.75rem;
     left: 0;
-    margin: 0.75rem;
-    padding: 0.75rem 0;
+    margin: 0;
+    padding: 0.75rem;
     position: absolute;
     right: 0;
     text-align: center;
-    text-shadow: 0px 1px 0px rgba(#000,0.3);
     text-transform: uppercase;
-    top: 0;
+    bottom: 0;
     z-index: 20;
+    transition: all 0.5s ease;
+
+    @media only screen and (max-width: 900px) {
+      padding: 0.5rem 0 0;
+    }
     
-    span {
+    &:hover {
+      background: rgba(#000, 0.5);
+      padding: 1.5rem 0;
+
+      @media only screen and (max-width: 900px) {
+        padding: 0.5rem 0 0;
+      }
+    
+    }
+    
+    span,
+    .action {
       display: inline-block;
       margin: 0;
       max-width: 14rem;
+      text-align: center;
       width: 25%;
-      
-      &:first-child {
-        text-align: left;
-      }
-
-      &:nth-child(2) {
-        text-align: center;
-        width: 35%;
-      }
-
-      &:last-child {
-        text-align: right;
-      }
       
       a {
         text-decoration: none;
       }
     }
+    
+    .action {
+      background: rgba(#FFF,0.8);
+      color: #000;
+      padding: 0.75rem 0;
+      margin: -0.75rem 0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: rgba(#FFF,1);
+      }
+      
+      @media only screen and (max-width: 900px) {
+        
+        display: block;
+        margin: 0.75rem 0 0;
+        max-width: none;
+        width: 100%;
+
+      }
+
+    }
+    
   }
   
   .actions {

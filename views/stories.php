@@ -32,23 +32,23 @@
           <?php endif; ?>
         </h3>
         <p class="detail">
-          <span class="time" data-timestamp="<?php echo $event->start; ?>">
-            <i class="icon" data-icon="&#xe094;"></i>
-            <?php echo date('ga', strtotime($event->start)); ?>
-          </span>
           <span class="location">
             <i class="icon icon-geolocalizator"></i>
             <a href="<?php echo url('location', $event->location); ?>"><?php echo $event->location; ?></a>
           </span>
+
           <span class="group">
             <i class="icon icon-list"></i>
             <a href="<?php echo url('group', $event->group); ?>"><?php echo ((strlen($event->group)==1) ? 'Group ' : '') . $event->group; ?></a>
           </span>
+
+          <span class="time" data-timestamp="<?php echo $event->start; ?>">
+            <i class="icon" data-icon="&#xe094;"></i>
+            <?php echo date('ga', strtotime($event->start)); ?>
+          </span>
+          <a class="action" href="<?php echo str_replace('http://','webcal://',$event->ics_url); ?>">Add to calendar</a>
+
         </p>
-        <div class="actions">
-          <a href="<?php echo str_replace('http://','webcal://',$event->ics_url); ?>">Add to calendar</a>
-          <a href="<?php echo url('event',$event->summary); ?>">Tell your friends</a>
-        </div>
       </div>
   <?php endforeach; ?>
 
