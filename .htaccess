@@ -4,8 +4,12 @@
   RewriteBase /
 
 
+  RewriteRule next-week.rss  /rss.php?before=+7+days [L]
+  RewriteRule tomorrow.rss  /rss.php?before=+2+days [L]
+  RewriteRule today.rss  /rss.php?before=+1+days [L]
+  RewriteRule index.rss  /rss.php?before=+3+hours [L]
   RewriteRule ^([a-zA-Z]+)-([0-9]+).rss  /rss.php?team=$1&before=+$2+days [L]
-  RewriteRule ^([a-zA-Z]+).rss  /rss.php?team=$1&before=+1+days [L]
+  RewriteRule ^([a-zA-Z]+).rss  /rss.php?team=$1&before=+12+hours [L]
 
   RewriteRule ^index\.php$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
