@@ -7,7 +7,7 @@ require('_includes/data.php');
 
 // Set some constants
 $base_url = 'http://' . $_SERVER['SERVER_NAME'];
-$feed_url = $base_url . '/rss.php';
+$feed_url = $base_url . $_SERVER['REQUEST_URI'];
 
 // Check for URL parameters
 $before = (isset($_GET['before'])) ? $_GET['before'] : 'tomorrow';
@@ -24,9 +24,9 @@ $xml->addAttribute('xmlns:xmlns:atom', "http://www.w3.org/2005/Atom");
 
 // Create RSS CHANNEL node
 $channel = $xml->addChild("channel");
-$channel->addChild("title", 'World Cup 2014 Kick Off');
+$channel->addChild("title", (($team!='') ? ucwords($team) . ' - ' : '') . 'World Cup 2014 Kick Off');
 $channel->addChild("link", 'http://www.worldcupkickoff.com');
-$channel->addChild("description", 'All the World Cup 2014 kick off times, direct from Brazil to your device');
+$channel->addChild("description", 'All the World Cup 2014 kick off times' . (($team!='') ? ' for ' . ucwords($team) : '') . ', direct from Brazil to your device');
 $channel->addChild("language", "en-GB");
 $channel->addChild('ttl','120');
 $channel->addChild('lastBuildDate', date('r', time()));
