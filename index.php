@@ -71,6 +71,8 @@ include('_includes/data.php');
   <script src="/js/libs/jquery-2.0.3.min.js"></script>
   <script src="/js/libs/moment.min.js"></script>
 	<script src="/js/plugins/jquery.countdown.min.js"></script>
+  <script src="/js/plugins/mailchimp.form.js"></script>
+  <script src="/js/plugins/unitime.js"></script>
   <script src="/js/app/worldcupko.js"></script>
   
   <script type='text/javascript'>var _merchantSettings=_merchantSettings || [];_merchantSettings.push(['AT', '1l3v9Tt']);(function(){var autolink=document.createElement('script');autolink.type='text/javascript';autolink.async=true; autolink.src= ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(autolink, s);})();</script>
