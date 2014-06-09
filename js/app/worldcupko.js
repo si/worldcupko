@@ -29,15 +29,15 @@ $(document).ready(function(){
     $('.event .detail .time').each( function(e) {
 
       timestamp_utc = $(this).data('timestamp');
-      console.log(timestamp_utc);
 
       time_local = ko_locale.convertUtcToLocalTimeDisplay(timestamp_utc);
       time_local = time_local.replace('\:00 ',' ');
-      console.log(time_local);
 
       $(this).text(time_local);
 
     });
+    
+    $('.info').html('All times are set to your local timezone – downloaded calendars will act the same.');
     
   }();
   
