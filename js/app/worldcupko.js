@@ -32,6 +32,7 @@ $(document).ready(function(){
       console.log(timestamp_utc);
 
       time_local = ko_locale.convertUtcToLocalTimeDisplay(timestamp_utc);
+      time_local = time_local.replace('\:00 ',' ');
       console.log(time_local);
 
       $(this).text(time_local);
