@@ -42,7 +42,7 @@
             <a href="<?php echo url('group', $event->group); ?>"><?php echo ((strlen($event->group)==1) ? 'Group ' : '') . $event->group; ?></a>
           </span>
 
-          <span class="time" data-timestamp="<?php echo $event->start; ?>">
+          <span class="time" title="<?php echo $event->start; ?>" data-timestamp="<?php echo date('Y-m-d H:i:s',strtotime($event->start)); ?>">
             <i class="icon" data-icon="&#xe094;"></i>
             <?php echo date('ga', strtotime($event->start)); ?>
           </span>
