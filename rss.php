@@ -14,6 +14,14 @@ $before = (isset($_GET['before'])) ? $_GET['before'] : 'tomorrow';
 $team = (isset($_GET['team'])) ? $_GET['team'] : '';
 $group = (isset($_GET['group'])) ? $_GET['group'] : '';
 
+if (isset($_GET['before']) && $_GET['before'] == 'tomorrow'){
+	$before = '+1 day';
+	$after  = '-1 day';	
+} else {
+	$before = '+2 hours';
+	$after  = '-1 hour';
+}
+
 // HTTP header
 header('content-type:application/rss+xml; charset=UTF-8');
 
@@ -42,7 +50,7 @@ $atom_link->addAttribute('href', $feed_url);
 foreach($json->events as $event) : 
 
   // Check if the event happens within the Before parameter
-  if(strtotime($event->start) < strtotime($before)) { 
+  if(strtotime($event->start) < strtotime($before) && strtotime($event->start) > strtotime($after)) { 
   
     // Filter by team if defined
     if(
