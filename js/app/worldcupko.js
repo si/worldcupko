@@ -23,17 +23,14 @@ $(document).ready(function(){
   
   /* Localise all times */
   localiseTimes = function() {
+  
+    var local_format = 'h:mm a';
       
-    ko_locale = new Unitime();
-    
     $('.event .detail .time').each( function(e) {
 
       timestamp_utc = $(this).data('timestamp');
-
-      time_local = ko_locale.convertUtcToLocalTimeDisplay(timestamp_utc);
-      time_local = time_local.replace('\:00 ',' ');
-
-      $(this).text(time_local);
+      time = moment(timestamp_utc);
+      $(this).text(time.format(local_format));
 
     });
     

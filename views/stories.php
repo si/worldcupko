@@ -23,9 +23,9 @@
         <h3>
           <?php if($event->home_team->name!='') : ?>
             <a href="<?php echo url('team', $event->home_team->name); ?>" class="team <?php echo strtolower(str_replace(' ','-',$event->home_team->name)); ?>">
-              <?php echo $event->home_team->name; ?>
+              <span><?php echo $event->home_team->name; ?></span>
             </a><span class="vs"> v </span><a href="<?php echo url('team', $event->away_team->name); ?>" class="team <?php echo strtolower(str_replace(' ','-',$event->away_team->name)); ?>">
-              <?php echo $event->away_team->name; ?>
+              <span><?php echo $event->away_team->name; ?></span>
             </a>
           <?php else: ?>
             <span class="no-teams"><?php echo $event->summary; ?></span>
@@ -42,7 +42,7 @@
             <a href="<?php echo url('group', $event->group); ?>"><?php echo ((strlen($event->group)==1) ? 'Group ' : '') . $event->group; ?></a>
           </span>
 
-          <span class="time" title="<?php echo $event->start; ?>" data-timestamp="<?php echo date('Y-m-d H:i:s',strtotime($event->start)); ?>">
+          <span class="time" title="<?php echo $event->start; ?> UTC" data-timestamp="<?php echo date('Y-m-d\TH:i:s',strtotime($event->start)); ?>+00:00">
             <i class="icon" data-icon="&#xe094;"></i>
             <?php echo date('ga', strtotime($event->start)); ?>
           </span>
