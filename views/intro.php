@@ -61,7 +61,12 @@
     </div>
     
     <?php if(count($json->events)>0) : 
-      $next = $json->events[0];
+      foreach($json->events as $event) {
+        if(strtotime($event->start) > strtotime('Now')) {
+          $next = $event;
+          break;
+        }
+      }
     ?>
   
     <div id="next">
