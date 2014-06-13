@@ -30,11 +30,11 @@ $(document).ready(function(){
 
       timestamp_utc = $(this).data('timestamp');
       time = moment(timestamp_utc);
-      $(this).text(time.format(local_format));
+      if(time.isValid) $(this).text(time.format(local_format));
 
     });
     
-    $('.info').html('All times are set to your local timezone – downloaded calendars will act the same.');
+    if(moment()) $('.info').html('All times are set to your local timezone – downloaded calendars will act the same.');
     
   }();
   
