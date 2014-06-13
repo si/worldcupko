@@ -16,7 +16,7 @@ $group = (isset($_GET['group'])) ? $_GET['group'] : '';
 
 if (isset($_GET['before']) && $_GET['before'] == 'tomorrow'){
 	$before = '+1 day';
-	$after  = '-1 day';	
+	$after  = '-6 hours';	
 } else {
 	$before = '+2 hours';
 	$after  = '-1 hour';
