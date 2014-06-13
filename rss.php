@@ -63,7 +63,7 @@ foreach($json->events as $event) :
       $item->addChild("guid", $base_url . url('event',$event->summary));
       $item->addChild("title", $event->summary);
       $item->addChild("link", $base_url . url('event',$event->summary));
-      $item->addChild("description",  'Kick off at <span class="time">' . date('ga', strtotime($event->start)) . '</span>, <span class="location">' . $event->location . '</span>, <span class="group">' . ((strlen($event->group)==1) ? 'Group ' : '') . $event->group) . '</span>';
+      $item->addChild("description",  'Kick off at <span class="time">' . date('ga', strtotime($event->start)) . ' UTC</span>, <span class="location">' . $event->location . '</span>, <span class="group">' . ((strlen($event->group)==1) ? 'Group ' : '') . $event->group) . '</span>';
       $item->addChild("pubDate", date('r', strtotime($event->start)));
       $item->addChild('category', ((strlen($event->group)==1) ? 'Group ' : '') . $event->group);
 
