@@ -54,7 +54,7 @@ $(document).ready(function(){
     description = description.replace('team-','');
     description = description.replace('venue-','');
     description = description.replace('date-','');
-    description = description.replace('-',' ');
+    description = description.replace(/\-/g,' ');
     description = description.capitalize();
     description += ' games - ';
     console.log(description);
