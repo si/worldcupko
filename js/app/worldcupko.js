@@ -57,7 +57,6 @@ $(document).ready(function(){
     description = description.replace(/\-/g,' ');
     description = description.capitalize();
     description += ' games - ';
-    console.log(description);
     $('title').text(description + $('title').text());
     
     
