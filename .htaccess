@@ -3,6 +3,10 @@
   RewriteEngine On
   RewriteBase /
 
+  RewriteRule ^venue\/([a-zA-Z0-9\-]+)  /index.php?venue=$1 [L]
+  RewriteRule ^group\/([a-zA-Z0-9\-]+)  /index.php?group=$1 [L]
+  RewriteRule ^team\/([a-zA-Z0-9\-]+)  /index.php?team=$1 [L]
+  RewriteRule ^date\/([a-zA-Z0-9\-]+)  /index.php?date=$1 [L]
 
   RewriteRule next-week.rss  /rss.php?before=+7+days [L]
   RewriteRule tomorrow.rss  /rss.php?before=+2+days [L]
@@ -15,6 +19,8 @@
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.php [L]
+  
+  
   
 
 </IfModule>
