@@ -87,22 +87,5 @@
     <p class="info">All times on the site are <abbr title="Coordinated Universal Time">UTC</abbr> – your calendar will automatically update to your timezone</p>
   
     
-    <div class="ad">
-
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- WCKO Main -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-2350797824472723"
-           data-ad-slot="9714592443"
-           data-ad-format="horizontal"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-
-      <a href="mailto:updates@worldcupkickoff.com">Email us to get your brand in front of thousands of global football fans</a></ins>
-    </div>
-    
-
 
   </section>
