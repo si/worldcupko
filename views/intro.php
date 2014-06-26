@@ -71,7 +71,7 @@
   
     <div id="next">
       <h2>Next up</h2>
-      <p class="countdown" title="<?php echo ($next->start); ?> UTC">
+      <p class="countdown" title="<?php echo ($next->start); ?>+00:00">
         <?php echo $next->start; ?>
       </p>
       <p class="details">
