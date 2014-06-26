@@ -14,4 +14,38 @@ $json = ($data!='') ? json_decode($data) : '';
 // close cURL resource, and free up system resources
 curl_close($ch);
 
+/*
+if(count($_GET)>0) {
 
+  if(isset($_GET['group'])) {
+    $key = 'group';
+    $value = $_GET['group'];
+  }
+
+  if(isset($_GET['venue'])) {
+    $key = 'venue';
+    $value = $_GET['venue'];
+  }
+
+  if(isset($_GET['date'])) {
+    $key = 'start';
+    $value = $_GET['date'];
+  }
+
+  if(isset($_GET['team'])) {
+    $key = 'team';
+    $value = $_GET['team'];
+  }
+
+  foreach($json->events as $event) {
+    
+    if($key = 'group' && $event->group != $value) {
+      unset($event);
+    }
+    
+  }
+  
+  var_dump($json->events);
+
+}
+*/
