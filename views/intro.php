@@ -36,9 +36,6 @@
         <i class="icon" data-icon="&#xe02a;"></i>
         <span>Share the love for football</span>
         <ul class="share">
-          <li class="facebook">
-            <div class="fb-like" data-href="http://www.worldcupkickoff.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-          </li>
           <li class="twitter">
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.worldcupkickoff.com" data-count="horizontal">Tweet</a>
             <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
