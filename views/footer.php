@@ -5,6 +5,7 @@
     </div>
     <div class="credits">
       <p>Another <a href="http://kickoffcalendars.com/">KickOff Calendar</a> by <a href="http://twitter.com/Si">Si</a></p>
-      <p>World Cup 2014 is managed by FIFA. All data is republished in openly available data formats. Source control by Github</p>
+      <p>World Cup 2014 is managed by FIFA. All data is republished in openly available data formats.</p>
+      <p>Source control on <a href="https://github.com">Github</a>. Releases by <a href="http://dploy.io">Dploy</a>. Emails from <a href="http://eepurl.com/V88BX">Mailchimp</a>.</p>
     </div>
   </footer>
