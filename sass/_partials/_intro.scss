@@ -311,7 +311,7 @@ $google : #c14343;
         
         span {
           display: inline-block;
-          margin: 0.45rem 0;
+          margin: 0.25rem 0;
           width: 11rem;
           vertical-align: top;
         }
@@ -330,7 +330,7 @@ $google : #c14343;
         
         input, button {
           display: inline-block;
-          margin: 0.45rem 0;
+          margin: 0.6rem 0;
           width: auto;
           vertical-align: top;
         }
@@ -339,10 +339,22 @@ $google : #c14343;
 
     #social {
     
-      display: none;
-      
+      position: relative;
+    
       span {
-        display: none;
+          display: inline-block;
+          margin: 0.1rem 0;
+          width: 11rem;
+          vertical-align: top;
+      }
+      ul {
+        position: absolute;
+        top: 0.7rem;
+        left: 5.7rem;
+        display: block;
+        margin: 0.45rem 0;
+        width: 70%;
+        vertical-align: top;
       }
 
     }

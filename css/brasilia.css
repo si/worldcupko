@@ -507,7 +507,7 @@
   /* line 312, ../sass/_partials/_intro.scss */
   #intro #download a span {
     display: inline-block;
-    margin: 0.45rem 0;
+    margin: 0.25rem 0;
     width: 11rem;
     vertical-align: top;
   }
@@ -523,19 +523,32 @@
   /* line 331, ../sass/_partials/_intro.scss */
   #intro #newsletter label input, #intro #newsletter label button {
     display: inline-block;
-    margin: 0.45rem 0;
+    margin: 0.6rem 0;
     width: auto;
     vertical-align: top;
   }
   /* line 340, ../sass/_partials/_intro.scss */
   #intro #social {
-    display: none;
+    position: relative;
   }
   /* line 344, ../sass/_partials/_intro.scss */
   #intro #social span {
-    display: none;
+    display: inline-block;
+    margin: 0.1rem 0;
+    width: 11rem;
+    vertical-align: top;
   }
-  /* line 352, ../sass/_partials/_intro.scss */
+  /* line 350, ../sass/_partials/_intro.scss */
+  #intro #social ul {
+    position: absolute;
+    top: 0.7rem;
+    left: 5.7rem;
+    display: block;
+    margin: 0.45rem 0;
+    width: 70%;
+    vertical-align: top;
+  }
+  /* line 364, ../sass/_partials/_intro.scss */
   #intro #next p {
     display: block;
     float: none;
@@ -550,14 +563,14 @@
             }
     */
   }
-  /* line 358, ../sass/_partials/_intro.scss */
+  /* line 370, ../sass/_partials/_intro.scss */
   #intro #next p h2, #intro #next p.countdown, #intro #next p.details {
     text-align: center;
     width: auto;
   }
 }
 
-/* line 378, ../sass/_partials/_intro.scss */
+/* line 390, ../sass/_partials/_intro.scss */
 .ad {
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);
@@ -567,22 +580,22 @@
   text-align: center;
   /* iPhone 4 - 960 × 640 */
 }
-/* line 386, ../sass/_partials/_intro.scss */
+/* line 398, ../sass/_partials/_intro.scss */
 .ad .mobile {
   display: none;
 }
-/* line 390, ../sass/_partials/_intro.scss */
+/* line 402, ../sass/_partials/_intro.scss */
 .ad a {
   color: #999;
   display: block;
   padding: 1rem 0 0;
 }
 @media only screen and (max-width: 900px) {
-  /* line 398, ../sass/_partials/_intro.scss */
+  /* line 410, ../sass/_partials/_intro.scss */
   .ad .leaderboard {
     display: none;
   }
-  /* line 401, ../sass/_partials/_intro.scss */
+  /* line 413, ../sass/_partials/_intro.scss */
   .ad .mobile {
     display: block;
   }
