@@ -343,60 +343,67 @@
 /* line 142, ../sass/_partials/_intro.scss */
 #intro #social ul li {
   display: inline-block;
-  margin: 0.75rem 2% 0 0;
+  margin: 0.75rem 1% 0 0;
   padding: 0;
   width: 30%;
-  /*
-          &.facebook a {
-            background: rgba($facebook, 0.8);
-            
-            &:hover {
-              background: rgba($facebook, 1);
-            }
-          }
-          &.twitter a {
-            background: rgba($twitter, 0.8);
-            
-            &:hover {
-              background: rgba($twitter, 1);
-            }
-          }
-          &.google a {
-            background: rgba($google, 0.8);
-            
-            &:hover {
-              background: rgba($google, 1);
-            }
-  
-          }
-  */
 }
 /* line 148, ../sass/_partials/_intro.scss */
 #intro #social ul li:last-child {
   margin-right: 0;
 }
 /* line 152, ../sass/_partials/_intro.scss */
-#intro #social ul li iframe, #intro #social ul li div, #intro #social ul li a {
-  display: inline-block;
-  /*
-            background: rgba(#000,0.8);
-            color: #FFF;
-            padding: 0.3rem;
-            text-align: center;
-  */
+#intro #social ul li a {
+  display: block;
+  background: rgba(0, 0, 0, 0.8) no-repeat 50% 50%;
+  background-size: 30% 50%;
+  color: #FFF;
+  font-family: Avenir, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-indent: -200rem;
+  transition: all 0.2s ease;
 }
-/* line 162, ../sass/_partials/_intro.scss */
-#intro #social ul li.facebook div {
-  margin-top: -10px;
+/* line 164, ../sass/_partials/_intro.scss */
+#intro #social ul li a:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
 }
-/* line 195, ../sass/_partials/_intro.scss */
+/* line 170, ../sass/_partials/_intro.scss */
+#intro #social ul li.facebook a {
+  background-color: rgba(0, 101, 193, 0.8);
+  background-image: url(/img/svg/facebook.svg);
+}
+/* line 174, ../sass/_partials/_intro.scss */
+#intro #social ul li.facebook a:hover {
+  background-color: #0065c1;
+}
+/* line 178, ../sass/_partials/_intro.scss */
+#intro #social ul li.twitter a {
+  background-color: rgba(0, 159, 194, 0.8);
+  background-image: url(/img/svg/twitter.svg);
+}
+/* line 182, ../sass/_partials/_intro.scss */
+#intro #social ul li.twitter a:hover {
+  background-color: #009fc2;
+}
+/* line 186, ../sass/_partials/_intro.scss */
+#intro #social ul li.google a {
+  background-color: rgba(193, 67, 67, 0.8);
+  background-image: url(/img/svg/google.svg);
+}
+/* line 190, ../sass/_partials/_intro.scss */
+#intro #social ul li.google a:hover {
+  background-color: #c14343;
+}
+/* line 201, ../sass/_partials/_intro.scss */
 #intro #next {
   clear: left;
   display: block;
   margin: 2rem 0 3rem;
   overflow: hidden;
 }
-/* line 201, ../sass/_partials/_intro.scss */
+/* line 207, ../sass/_partials/_intro.scss */
 #intro #next h2 {
   letter-spacing: 1rem;
   margin: 0;
@@ -406,14 +413,14 @@
   text-transform: uppercase;
   width: auto;
 }
-/* line 212, ../sass/_partials/_intro.scss */
+/* line 218, ../sass/_partials/_intro.scss */
 #intro #next p {
   float: left;
   margin: 0;
   padding: 0;
   width: 48%;
 }
-/* line 218, ../sass/_partials/_intro.scss */
+/* line 224, ../sass/_partials/_intro.scss */
 #intro #next p span {
   display: inline-block;
   font-size: 1rem;
@@ -422,35 +429,35 @@
   padding: 0;
   width: 4.5rem;
 }
-/* line 227, ../sass/_partials/_intro.scss */
+/* line 233, ../sass/_partials/_intro.scss */
 #intro #next p strong {
   display: block;
   font-size: 3rem;
   padding: 1rem 0 0;
   vertical-align: top;
 }
-/* line 235, ../sass/_partials/_intro.scss */
+/* line 241, ../sass/_partials/_intro.scss */
 #intro #next .countdown {
   margin-right: 1%;
   text-align: right;
 }
-/* line 239, ../sass/_partials/_intro.scss */
+/* line 245, ../sass/_partials/_intro.scss */
 #intro #next .countdown strong {
   animation: countdown 1s infinite;
   -webkit-animation: countdown 1s infinite;
 }
-/* line 245, ../sass/_partials/_intro.scss */
+/* line 251, ../sass/_partials/_intro.scss */
 #intro #next .details {
   margin-left: 1%;
   text-align: left;
 }
-/* line 249, ../sass/_partials/_intro.scss */
+/* line 255, ../sass/_partials/_intro.scss */
 #intro #next .details span {
   display: block;
   line-height: 0.8;
   width: auto;
 }
-/* line 259, ../sass/_partials/_intro.scss */
+/* line 265, ../sass/_partials/_intro.scss */
 #intro .info {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.8rem;
@@ -458,20 +465,20 @@
   text-align: center;
 }
 @media only screen and (max-width: 900px) {
-  /* line 270, ../sass/_partials/_intro.scss */
+  /* line 276, ../sass/_partials/_intro.scss */
   #intro #intro {
     padding: 4rem 0;
   }
-  /* line 273, ../sass/_partials/_intro.scss */
+  /* line 279, ../sass/_partials/_intro.scss */
   #intro h1 {
     font-size: 2rem;
   }
-  /* line 276, ../sass/_partials/_intro.scss */
+  /* line 282, ../sass/_partials/_intro.scss */
   #intro h2 {
     font-size: 1rem;
     max-width: 90%;
   }
-  /* line 284, ../sass/_partials/_intro.scss */
+  /* line 290, ../sass/_partials/_intro.scss */
   #intro #download,
   #intro #newsletter,
   #intro #social,
@@ -483,7 +490,7 @@
     width: 100%;
     text-align: left;
   }
-  /* line 292, ../sass/_partials/_intro.scss */
+  /* line 298, ../sass/_partials/_intro.scss */
   #intro #download i,
   #intro #newsletter i,
   #intro #social i,
@@ -492,43 +499,43 @@
     width: 2rem;
     margin: 0 2rem 0 1.5rem;
   }
-  /* line 302, ../sass/_partials/_intro.scss */
+  /* line 308, ../sass/_partials/_intro.scss */
   #intro #download a {
     display: block;
     max-width: 100%;
   }
-  /* line 306, ../sass/_partials/_intro.scss */
+  /* line 312, ../sass/_partials/_intro.scss */
   #intro #download a span {
     display: inline-block;
     margin: 0.45rem 0;
     width: 11rem;
     vertical-align: top;
   }
-  /* line 317, ../sass/_partials/_intro.scss */
+  /* line 323, ../sass/_partials/_intro.scss */
   #intro #newsletter label {
     display: block;
     max-width: 100%;
   }
-  /* line 321, ../sass/_partials/_intro.scss */
+  /* line 327, ../sass/_partials/_intro.scss */
   #intro #newsletter label span {
     display: none;
   }
-  /* line 325, ../sass/_partials/_intro.scss */
+  /* line 331, ../sass/_partials/_intro.scss */
   #intro #newsletter label input, #intro #newsletter label button {
     display: inline-block;
     margin: 0.45rem 0;
     width: auto;
     vertical-align: top;
   }
-  /* line 334, ../sass/_partials/_intro.scss */
+  /* line 340, ../sass/_partials/_intro.scss */
   #intro #social {
     display: none;
   }
-  /* line 338, ../sass/_partials/_intro.scss */
+  /* line 344, ../sass/_partials/_intro.scss */
   #intro #social span {
     display: none;
   }
-  /* line 346, ../sass/_partials/_intro.scss */
+  /* line 352, ../sass/_partials/_intro.scss */
   #intro #next p {
     display: block;
     float: none;
@@ -543,14 +550,14 @@
             }
     */
   }
-  /* line 352, ../sass/_partials/_intro.scss */
+  /* line 358, ../sass/_partials/_intro.scss */
   #intro #next p h2, #intro #next p.countdown, #intro #next p.details {
     text-align: center;
     width: auto;
   }
 }
 
-/* line 372, ../sass/_partials/_intro.scss */
+/* line 378, ../sass/_partials/_intro.scss */
 .ad {
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.7);
@@ -560,22 +567,22 @@
   text-align: center;
   /* iPhone 4 - 960 × 640 */
 }
-/* line 380, ../sass/_partials/_intro.scss */
+/* line 386, ../sass/_partials/_intro.scss */
 .ad .mobile {
   display: none;
 }
-/* line 384, ../sass/_partials/_intro.scss */
+/* line 390, ../sass/_partials/_intro.scss */
 .ad a {
   color: #999;
   display: block;
   padding: 1rem 0 0;
 }
 @media only screen and (max-width: 900px) {
-  /* line 392, ../sass/_partials/_intro.scss */
+  /* line 398, ../sass/_partials/_intro.scss */
   .ad .leaderboard {
     display: none;
   }
-  /* line 395, ../sass/_partials/_intro.scss */
+  /* line 401, ../sass/_partials/_intro.scss */
   .ad .mobile {
     display: block;
   }

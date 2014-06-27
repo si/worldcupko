@@ -26,7 +26,6 @@
       		<div class="response" id="mce-error-response" style="display:none"></div>
       		<div class="response" id="mce-success-response" style="display:none"></div>
       	</div>
-      	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       	<div style="position: absolute; left: -5000px;"><input type="text" name="b_bf6b27ef9d1cf4839476ae2eb_b91f04a74d" tabindex="-1" value=""></div>
   		</form>
 
@@ -34,25 +33,18 @@
   		
   		<div id="social">
         <i class="icon" data-icon="&#xe02a;"></i>
-        <span>Share the love for football</span>
+        <span>Follow us for updates</span>
         <ul class="share">
           <li class="twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.worldcupkickoff.com" data-count="horizontal">Tweet</a>
-            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            <a href="https://twitter.com/worlcupko">Twitter</a>
+          </li>
+          <li class="facebook">
+            <a href="https://www.facebook.com/worlcupkickoff">Facebook</a>
           </li>
           <li class="google">
-            <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>" class="g-plusone" data-size="medium" data-href="http://www.worldcupkickoff.com">+1</a>
+            <a href="http://plus.google.com/+worldcupkickoff">Google+</a>
           </li>
         </ul>
-        
-        <script type="text/javascript">
-            (function() {
-              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-              po.src = 'https://apis.google.com/js/plusone.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-            })();
-        </script>  			
-        
   		</div>
     		
     </div>
