@@ -41,6 +41,7 @@ $(document).ready(function(){
   /*
   Filter events based on URL
   */
+/*
   var url = window.location.pathname,
       selector,
       description;
@@ -65,6 +66,7 @@ $(document).ready(function(){
     $(selector).slideDown('slow');
     $(selector).closest('.day').children('.date').slideDown('slow');
   }
+*/
 
 });
 

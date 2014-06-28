@@ -14,9 +14,8 @@ $json = ($data!='') ? json_decode($data) : '';
 // close cURL resource, and free up system resources
 curl_close($ch);
 
-/*
 if(count($_GET)>0) {
-
+  
   if(isset($_GET['group'])) {
     $key = 'group';
     $value = $_GET['group'];
@@ -37,15 +36,19 @@ if(count($_GET)>0) {
     $value = $_GET['team'];
   }
 
+  $filtered = array();
   foreach($json->events as $event) {
     
-    if($key = 'group' && $event->group != $value) {
-      unset($event);
+    if($key == 'team' && (strtolower($event->home_team->name) == strtolower($value) || strtolower($event->away_team->name) == strtolower($value))) {
+      $filtered[] = $event;
+    } elseif($key == 'venue' && strtolower($event->location) == strtolower($value)) {
+      $filtered[] = $event;
+    } elseif($key == 'group' && strtolower($event->group) == strtolower($value)) {
+      $filtered[] = $event;
     }
     
   }
   
-  var_dump($json->events);
-
+  $json->events = $filtered;
 }
-*/
+
