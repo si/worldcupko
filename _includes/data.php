@@ -28,7 +28,7 @@ if(count($_GET)>0) {
 
   if(isset($_GET['date'])) {
     $key = 'start';
-    $value = $_GET['date'];
+    $value = str_replace('-', ' ', $_GET['date']);
   }
 
   if(isset($_GET['team'])) {
@@ -44,6 +44,8 @@ if(count($_GET)>0) {
     } elseif($key == 'venue' && strtolower($event->location) == strtolower($value)) {
       $filtered[] = $event;
     } elseif($key == 'group' && strtolower($event->group) == strtolower($value)) {
+      $filtered[] = $event;
+    } elseif($key == 'start' && date('Y-m-d',strtotime($event->start)) == date('Y-m-d',strtotime($value))) {
       $filtered[] = $event;
     }
     
