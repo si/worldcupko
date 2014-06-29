@@ -49,13 +49,15 @@
     		
     </div>
     
-    <?php if(count($json->events)>0) : 
+    <?php 
+    if(count($json->events)>0) : 
       foreach($json->events as $event) {
         if(strtotime($event->start) > strtotime('Now')) {
           $next = $event;
           break;
         }
       }
+      if(isset($next)) :
     ?>
   
     <div id="next">
@@ -71,7 +73,9 @@
       </p>
     </div>
     
-    <?php endif; ?>
+    <?php 
+      endif;
+    endif; ?>
 
     <p class="info">All times on the site are <abbr title="Coordinated Universal Time">UTC</abbr> – your calendar will automatically update to your timezone</p>
   
