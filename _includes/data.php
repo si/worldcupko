@@ -14,7 +14,7 @@ $json = ($data!='') ? json_decode($data) : '';
 // close cURL resource, and free up system resources
 curl_close($ch);
 
-if(count($_GET)>0) {
+if(count($_GET)>0 && !isset($_GET['before'])) {
   
   if(isset($_GET['group'])) {
     $key = 'group';
