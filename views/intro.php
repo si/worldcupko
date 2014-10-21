@@ -36,10 +36,10 @@
         <span>Follow us for updates</span>
         <ul class="share">
           <li class="twitter">
-            <a href="https://twitter.com/worlcupko">Twitter</a>
+            <a href="https://twitter.com/worldcupko">Twitter</a>
           </li>
           <li class="facebook">
-            <a href="https://www.facebook.com/worlcupkickoff">Facebook</a>
+            <a href="https://www.facebook.com/worldcupkickoff">Facebook</a>
           </li>
           <li class="google">
             <a href="http://plus.google.com/+worldcupkickoff">Google+</a>
