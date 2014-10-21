@@ -75,16 +75,11 @@
     
     <?php 
       endif;
-    else:
     ?>
-    <div id="next">
-      <p>That's it for 4 more years. See you in Russia!</p>
-    </div>
-      
+    <p class="info">All times on the site are <abbr title="Coordinated Universal Time">UTC</abbr> – your calendar will automatically update to your timezone</p>
     <?php
     endif; ?>
 
-    <p class="info">All times on the site are <abbr title="Coordinated Universal Time">UTC</abbr> – your calendar will automatically update to your timezone</p>
   
     
 
