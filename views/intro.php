@@ -74,6 +74,13 @@
     </div>
     
     <?php 
+      else:
+    ?>
+    <div id="next">
+      <p>That's it for 4 more years. See you in Russia!</p>
+    </div>
+      
+    <?php
       endif;
     endif; ?>
 
