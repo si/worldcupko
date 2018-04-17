@@ -8,7 +8,7 @@ include('_includes/data.php');
 <html lang="en">
 <head>
   <meta charset="utf-8">
-	<title>World Cup 2014 kick off times from Brazil to your device</title>
+	<title>World Cup 2018 kick off times from Russia</title>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
