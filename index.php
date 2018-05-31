@@ -8,12 +8,12 @@ include('_includes/data.php');
 <html lang="en">
 <head>
   <meta charset="utf-8">
-	<title>World Cup 2014 kick off times from Brazil to your device</title>
+	<title>World Cup 2018 Kick Off Times from Russia</title>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<meta name="description" content="All the World Cup kick off times from Brazil to your device" />
-	<meta name="keywords" content="world cup 2014, kick off times, calendar, brazil, email" />
+	<meta name="description" content="All the FIFA World Cup kick off times from Russia 2018 to your device" />
+	<meta name="keywords" content="world cup 2018, kick off times, calendar, russia" />
 	<meta name="author" content="humans.txt">
 
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
