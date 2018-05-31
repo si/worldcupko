@@ -1,5 +1,6 @@
 <?php
 $endpoint = 'http://alpha.kickoffcalendars.com/calendars/view/5.json';
+$endpoint = 'http://kickofftimes.app/competitions/export/91/json';
 
 // create a new cURL resource
 $ch = curl_init();
