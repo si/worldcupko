@@ -1,11 +1,11 @@
 <?php if($json=='') : ?>
   <p>No fixtures currently available. Please try again shortly.</p>
 <?php else: ?>
-  <?php if(count($json->events)==0) : ?>
+  <?php if(count($json->Event)==0) : ?>
     <p class="info">That's it for another four years. See you in Russia!</p>
   <?php 
     else:
-    foreach($json->events as $event) : 
+    foreach($json->Event as $event) : 
       if( $date != date('l j F Y', strtotime($event->start)) ) :
         
         if( $date != '' ) echo '</div>';
