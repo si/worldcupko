@@ -1,6 +1,8 @@
 <?php if($json=='') : ?>
   <p>No fixtures currently available. Please try again shortly.</p>
-<?php else: ?>
+<?php else: 
+var_dump(count($json->Event));
+?>
   <?php if(count($json->Event)==0) : ?>
     <p class="info">That's it for another four years. See you in Russia!</p>
   <?php 
