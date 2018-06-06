@@ -1,7 +1,7 @@
   <section id="intro">
 
     <header>
-      <h1><a href="/"><img src="/img/world-cup-2014-kick-off.png" alt="World Cup 2018 Kick Off" width="200"></a></h1>
+      <h1><a href="/"><img src="/img/world-cup-2018-kick-off.svg" alt="World Cup 2018 Kick Off" width="200"></a></h1>
       <h2>All the World Cup kick off times, directly from Russia to your device</h2>
     </header>
     
