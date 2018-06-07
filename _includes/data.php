@@ -9,9 +9,9 @@ curl_setopt($ch, CURLOPT_URL, $endpoint);
 curl_setopt($ch, CURLOPT_HEADER, 0);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $data = curl_exec($ch);
-echo '<textarea>'; var_dump($data); echo '</textarea>';
+echo '<textarea' . (!isset($_GET['debug']) ? ' style="display:none;"' : '') . '>'; var_dump($data); echo '</textarea>';
 $json = ($data!='') ? json_decode($data) : '';
-echo '<textarea>'; var_dump($json); echo '</textarea>';
+echo '<textarea' . (!isset($_GET['debug']) ? ' style="display:none;"' : '') . '>'; var_dump($json); echo '</textarea>';
 
 // close cURL resource, and free up system resources
 curl_close($ch);
