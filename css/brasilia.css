@@ -216,7 +216,7 @@
 
 /* line 14, ../sass/_partials/_intro.scss */
 #intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(/img/street-soccer-by-driftermanifesto.jpg) no-repeat fixed 50% 0/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
   color: #FFF;
   padding: 10rem 0;
   text-align: center;
