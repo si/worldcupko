@@ -4,6 +4,7 @@
     </div>
     <div class="credits">
       <p>Another <a href="https://kickofftimes.app/">KickOff Times</a> spin-off from <a href="https://sijobling.com/">Si</a></p>
+      <p>Follow <a href="https://twitter.com/worldcupko" rel="me">@WorldCupKO on Twitter</a> for fixture and website updates</p>
       <p>World Cup is managed by FIFA. All data is republished in openly available data formats.</p>
       <p>Source control on <a href="https://github.com/si/worldcupko">Github</a>. Hosted on <a href="https://www.heroku.com">Heroku</a>. Emails from <a href="http://eepurl.com/V88BX">Mailchimp</a>.</p>
     </div>
