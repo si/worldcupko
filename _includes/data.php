@@ -1,5 +1,5 @@
 <?php
-$endpoint = 'http://alpha.kickoffcalendars.com/calendars/view/5.json';
+$endpoint = 'https://kickofftimes.app/competitions/export/91/json';
 
 // create a new cURL resource
 $ch = curl_init();
@@ -9,7 +9,9 @@ curl_setopt($ch, CURLOPT_URL, $endpoint);
 curl_setopt($ch, CURLOPT_HEADER, 0);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $data = curl_exec($ch);
+echo '<textarea' . (!isset($_GET['debug']) ? ' style="display:none;"' : '') . '>'; var_dump($data); echo '</textarea>';
 $json = ($data!='') ? json_decode($data) : '';
+echo '<textarea' . (!isset($_GET['debug']) ? ' style="display:none;"' : '') . '>'; var_dump($json); echo '</textarea>';
 
 // close cURL resource, and free up system resources
 curl_close($ch);
