@@ -9,7 +9,6 @@ include('_includes/data.php');
 <head>
   <meta charset="utf-8">
 	<title>World Cup 2018 Kick Off Times from Russia</title>
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<meta name="description" content="All the FIFA World Cup kick off times from Russia 2018 to your device" />
